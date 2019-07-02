@@ -1,0 +1,27 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.wrapper
+{
+    height: 100vh;
+}
+.top-bar
+{
+    width: 80%;
+    height: 50px;
+    margin: 20px auto;
+}
+.logo
+{
+    width: 20%;
+    float: left;
+}
+
+.logo img
+{
+    width: 150px;
+    margin: 8px auto;
+    cursor: pointer;
+}
