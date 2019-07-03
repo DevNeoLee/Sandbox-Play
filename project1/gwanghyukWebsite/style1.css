@@ -9,7 +9,7 @@
 header {
     display: flex;
     width: 90%;
-    height: 12vh;
+    height: 15vh;
     margin: auto;
     align-items: center;
 }
@@ -18,17 +18,17 @@ header {
 .listContainer,
  .searchContainer {
      display: flex;
-     
  } 
 
  .logoContainer {
      flex: 1;
-     height: 12vh;
-     width: 2vh;
-     justify-content: space-around;
+  
  }
 
- header nav {
+ .logo {
+     height: 15vh;
+ }
+ nav {
      flex: 2;
  
  }
@@ -50,10 +50,68 @@ header {
      font-size: 20px;
  }
 
- .mainContnent {
-     width: 90%;
-     height: 80vh;
-     margin: auto;
-     display: flex;
-     align-items: center;
+ .mainContent {
+   
+	width: 90%;
+	margin: auto;
+	/* min-height: 70vh; */
+    align-items: center;
+    display: flex;
+ }
+
+ .introduction {
+     flex: 2;
+ }
+
+ .introWords h1{
+    font-size: 34px;
+	font-weight: 300;
+	background: linear-gradient(to right, #494964, #6f6f89);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
+ }
+
+ .introWords p{
+    font-size: 20px;
+ }
+
+ .button1 {
+	border: 2px solid lightblue;
+	background: transparent;
+	color:  lightblue;
+	width: 150px;
+	height: 50px;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+ .button2 {
+	border: 2px solid lightblue;
+	background: transparent;
+	color:  lightblue;
+	width: 150px;
+	height: 50px;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+ .mainImg {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	height: 90vh;
+}
+.mainImg img {
+	height: 100%;
+	animation: drop 5s ease;
+}
+
+  footer {
+   
+	width: 90%;
+	margin: auto;
+	/* min-height: 70vh; */
+    align-items: center;
+    display: flex;
  }
