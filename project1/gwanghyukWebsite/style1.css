@@ -18,8 +18,7 @@ header {
 .listContainer,
  .searchContainer {
      display: flex;
- } 
-
+ }
  .logoContainer {
      flex: 1;
   
@@ -84,9 +83,9 @@ header {
      
  }
  .button1 {
-	border: 2px solid #02922d;
+	border: 2px solid #028192;
 	background: transparent;
-    color:#02922d;
+    color:#028192;
 	width: 150px;
 	height: 50px;
 	cursor: pointer;
@@ -94,9 +93,9 @@ header {
 }
 
  .button2 {
-	border: 2px solid #02922d;
+	border: 2px solid #028192;
     color:white;
-    background: #02922d;
+    background: #028192;
 	width: 150px;
 	height: 50px;
 	cursor: pointer;
@@ -151,6 +150,7 @@ footer {
     align-items: center;
     width: 90%;
     margin: auto;
+    color:#494964;
 
     height: 8vh;
     text-align: center;
