@@ -33,12 +33,6 @@ header {
  
  }
 
- .searchContainer {
-     flex: 1;
-     justify-content: space-around;
-  
- }
-
  .listContainer {
      list-style: none;
      justify-content: space-around;
@@ -46,21 +40,27 @@ header {
 
  .list {
      text-decoration: none;
-     color: black;
+     color: #494964;
      font-size: 20px;
  }
 
+  .searchContainer {
+     flex: 1;
+     justify-content: space-around;
+  
+ }
+
  .mainContent {
-   
+    display: flex;
 	width: 90%;
 	margin: auto;
 	/* min-height: 70vh; */
     align-items: center;
-    display: flex;
+   
  }
 
  .introduction {
-     flex: 2;
+     flex: 1;
  }
 
  .introWords h1{
@@ -73,13 +73,20 @@ header {
  }
 
  .introWords p{
-    font-size: 20px;
+    font-size: 17px;
+    margin-top: 5px;
+    color:#494964;
  }
 
+ .buttons {
+     display: flex;
+     margin-top: 50px;
+     
+ }
  .button1 {
-	border: 2px solid lightblue;
+	border: 2px solid #02922d;
 	background: transparent;
-	color:  lightblue;
+    color:#02922d;
 	width: 150px;
 	height: 50px;
 	cursor: pointer;
@@ -87,13 +94,14 @@ header {
 }
 
  .button2 {
-	border: 2px solid lightblue;
-	background: transparent;
-	color:  lightblue;
+	border: 2px solid #02922d;
+    color:white;
+    background: #02922d;
 	width: 150px;
 	height: 50px;
 	cursor: pointer;
-	font-size: 16px;
+    font-size: 16px;
+    margin: 0px 0px 0px 3vh;
 }
 
  .mainImg {
@@ -107,11 +115,45 @@ header {
 	animation: drop 5s ease;
 }
 
-  footer {
-   
-	width: 90%;
-	margin: auto;
-	/* min-height: 70vh; */
-    align-items: center;
+.work-select{
+    width: 15%;
+	display: flex;
+	justify-content: space-around;
+	position: absolute;
+	right: 30%;
+}
+
+footer {
+    width: 90%;
+    margin: auto;
+    height: 20vh;
+}
+.footerLists {
+    list-style: none;
     display: flex;
- }
+    width: 90%;
+    justify-content: space-around;
+    height: 10vh;
+    align-items: center;
+}
+
+.footerList {
+   flex: 1;
+   text-decoration: none;
+   font-size: 20px;
+   color: #494964;
+   
+
+}
+
+.copyright {
+    font-size: 18px;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+
+    height: 8vh;
+    text-align: center;
+}
+
+ 
