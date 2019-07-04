@@ -141,19 +141,19 @@ nav {
 
 footer {
     margin-top: 50px;
-    width: 90%;
     margin: auto;
     align-items: center;
     text-align: center;
     height: 20vh;
+    width: 50%;
 }
 
 .footerlists {
-    margin-top: 50px;
+    margin-top: 200px;
     display: flex;
     justify-content: space-around;
     list-style: none;
-    font-size: 21px;
+    font-size: 17px;
 
 }
 
@@ -162,7 +162,80 @@ footer {
 }
     
 footer .copyright {
-    padding : 30px;
+    margin : 100px 0px 40px 0px;
 
 }
 
+.big-circle {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	/* z-index: -1; */
+	opacity: 0.5;
+    height: 100%;
+    animation: dance 5s;
+}
+.medium-circle {
+	position: absolute;
+	top: 30%;
+	right: 30%;
+	/* z-index: -1; */
+	height: 80%;
+    opacity: 0.4;
+    animation: dance 1s;
+}
+.small-circle {
+    position: absolute;
+    top: 60%;
+    right: 60%;
+    /* z-index: -1; */
+    height: 50%;
+    animation: dance 3s;
+}
+
+@keyframes dance {
+    0% {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
+@media screen and (max-width: 640px) {
+    header,
+    .section1,
+    .section2 {
+		flex-direction: column;
+	}
+	.introduction {
+		margin-top: 5vh;
+		text-align: center;
+	}
+	.intro-text h1 {
+		font-size: 30px;
+	}
+	.intro-text p {
+		font-size: 18px;
+	}
+	.controller {
+		padding: 10px 0px 0px 0px;
+	}
+    .button1,
+    .button2 {
+		bottom: 5%;
+		width: 50%;
+	}
+	.cover img {
+		height: 80%;
+	}
+	.small-circle,
+	.medium-circle,
+	.big-circle {
+		opacity: 0.4;
+	}
+}
