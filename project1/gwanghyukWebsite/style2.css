@@ -5,14 +5,17 @@
      font-family: 'Lato', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
 header {
     display: flex;
     margin: auto;
-    width: 90%;
     align-items: center;
     height: 15vh;  
+    width: 90%;
 }
-.search, .logo-container, .list {
+.search, .logo-container, .lists {
     display: flex;
     justify-content: space-around;
 }
@@ -41,38 +44,38 @@ nav {
 }
 
 .list {
-    text-decoration: none;
     color: #333333;
 }
 
-main {
-    width: 90%;
-    margin: auto;
-  
-}
 .section1 {
     padding: 150px 0px 0px 0px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin: auto;
+    width: 90%;
 }
 
-.pic1 {
-    height: 50vh;
+.pic,
+.introduction {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    flex: 1;
 }
 
-.pic2{
-    height: 50vh;
+.pic img {
+    height: 20vh;
 }
 
 .introduction {
     margin: 10px;
     align-items: center;
+    flex: 1;
 }
 
 .intro-text h1{
     color: #333333;
-
 }
 
 .intro-text p {
@@ -107,22 +110,20 @@ main {
 }
 
 .section2 {
+    padding: 150px 0px 0px 0px;
     display: flex;
     justify-content: space-around;
-    margin: 150px 0px 0px 0px;
     align-items: center;
+    width: 90%;
+    margin: auto;
 }
 
-.pic3 {
-    height: 40vh;
-}
-
-.pic4 {
-    height: 40vh;
-}
 .moreIntro {
     margin: 10px;
     align-items: center;
+    text-align: center;
+    flex: 1;
+    justify-content: space-around;
 }
 
 .moreText h1{
@@ -137,34 +138,31 @@ main {
     padding-bottom: 20px;
 }
 
-.button3 {
-    padding: 15px;
-    border: 1px solid #851f1f;
-    margin: 30px 30px 0px 20px;
-    color: #851f1f;
-    cursor: pointer;
-}
 
-.button4 {
-    padding: 15px;
-    border: 1px solid #851f1f;
-    background: #851f1f;
-    margin: 30px 30px 0px 20px;
-    color: white;
-    cursor: pointer;
-}
-.controller2 {
-    width: 30%;
-	display: flex;
-	justify-content: space-around;
-	position: absolute;
-	right: 40%;
-}
-}
 footer {
-    width: 70%;
+    margin-top: 50px;
+    width: 90%;
     margin: auto;
     align-items: center;
-   
+    text-align: center;
+    height: 20vh;
+}
+
+.footerlists {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    font-size: 21px;
+
+}
+
+.footerlist {
+    flex: 1;
+}
+    
+footer .copyright {
+    padding : 30px;
+
 }
 
