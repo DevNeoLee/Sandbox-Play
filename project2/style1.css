@@ -1,0 +1,61 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+header {
+    width: 90%;
+    margin: auto;
+    background: black;
+}
+.pre-nav {
+    display: flex;
+}
+.logo-container,
+.SNS {
+    flex-grow: 1;
+}
+.logo-container,
+.logo-container a {
+    font-size: 28px;
+    color: white;
+}
+.logo-container img {
+    width: 14vh;
+}
+.SNS {
+    text-align: right;
+    display: flex;
+}
+.SNS i {
+    margin: 10px;
+    font-size: 22px;
+    color: white;
+    padding-right: 15px;
+}
+.SNS a {
+    flex: 1;
+    margin: auto;
+}
+nav {
+    height: 5vh;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 90%;
+    margin: auto;
+}
+nav ul li {
+    flex: 1;
+    
+}
+.list {
+    font-size: 19px;
+    color: white;
+    margin: auto 0;
+}
+.newMessage {
+    color: white;
+}
+
+
