@@ -12,7 +12,7 @@ header {
 }
 .logo-container,
 .SNS {
-    flex-grow: 1;
+    flex: 1;
 }
 .logo-container,
 .logo-container a {
@@ -57,5 +57,176 @@ nav ul li {
 .newMessage {
     color: white;
 }
+.article1 {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    background: black;
+    color: white;
+    /* justify-content: space-between; */
+    text-align: center;
+    margin-bottom: 1vh;
 
+}
+article section h4 {
+    margin: 0px;
+}
+.most-view{
+    background: darkred;
+}
+
+.c {
+    flex: 2;
+}
+.new-photo {
+    flex: 1;
+}
+.new-submit {
+    background: darkgreen;
+}
+.new-sub {
+    display: flex;
+    flex-wrap:wrap;
+}
+.sub {
+    flex-basis: 50%;
+}
+.sub img{
+   width : 100%;
+}
+.article2 {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    text-align: center;
+}
+.article2 div h3,
+.article2 aside h3 {
+    margin: 0px;
+}
+.contest h3 {
+    background: darkblue;
+    color: white;
+}
+winner,
+aside {
+    flex-basis: 30%;
+}
+.winner img {
+    width: 100%;
+}
+.winners {
+    display: flex;
+}
+.blog {
+    margin: 0px 0px 5px 5px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+.blog-lists {
+    list-style: none;
+}
+.blog h3 {
+    color: white;
+    background: darkorchid;
+}
+.blog-list a {
+    font-size: 12px;
+    color: black;
+}
+.footer {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    background: black;
+    padding-bottom: 10px;
+}
+footer section {
+    flex: 1;
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+footer section p {
+    font-size: 12px;
+    padding: 5px;
+    vertical-align: middle;
+     align-items: center;
+}
+footer section h3 {
+    margin: 0px;
+}
+.about-title {
+    background: darkolivegreen;
+}
+.insta-title {
+    background: darkcyan;
+}
+.insta {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 0px;
+}
+.insta li {
+    flex-basis: 25%;
+}
+.insta img {
+    width: 100%;
+}
+.insta-button {
+    width: 150px;
+    height: 50px;
+    font-size: 13px;
+    color: white;
+    background: darkcyan;
+    border: none;
+    padding: 5px;
+    margin: auto 0;
+
+    
+}
+.contact-title {
+    background: darkmagenta;
+}
+.copyright {
+    padding-top: 20px;
+    text-align: center;
+    height: 8vh;
+}
+
+@media only screen and (max-width: 640px) {
+    header,
+    article,
+    .pre-nav,
+    .footer,
+    .winners{
+        flex-direction: column;
+    }
+
+    .c {
+        margin-bottom: 15px;
+        background: white;
+    }
+    .article1 {
+        background: white;
+    }
+    .new-photo {
+        background: black;
+    }
+    .contest {
+        background: black;
+    }
+    .winners {
+        color: white;
+    }
+    .blog {
+        margin-top: 10px;
+    }
+
+    .foot-sec {
+        margin-bottom: 15px;
+    }
+
+}
 
