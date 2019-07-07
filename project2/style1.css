@@ -27,14 +27,15 @@ header {
     display: flex;
 }
 .SNS i {
-    margin: 10px;
     font-size: 22px;
     color: white;
     padding-right: 15px;
+    width: 30%;
 }
 .SNS a {
     flex: 1;
     margin: auto;
+    margin-left: 0;
 }
 nav {
     height: 5vh;
@@ -42,17 +43,17 @@ nav {
 nav ul {
     display: flex;
     list-style: none;
-    width: 90%;
-    margin: auto;
+    width: 60%;
+    margin-left: 30px;
 }
 nav ul li {
     flex: 1;
     
 }
 .list {
-    font-size: 19px;
+    font-size: 22px;
     color: white;
-    margin: auto 0;
+   
 }
 .newMessage {
     color: white;
@@ -65,6 +66,7 @@ nav ul li {
     color: white;
     /* justify-content: space-between; */
     text-align: center;
+    margin-top: 2vh;
     margin-bottom: 1vh;
 
 }
@@ -99,10 +101,14 @@ article section h4 {
     margin: auto;
     display: flex;
     text-align: center;
+    margin-top: 2vh;
 }
 .article2 div h3,
 .article2 aside h3 {
     margin: 0px;
+}
+.contest {
+    background: black;
 }
 .contest h3 {
     background: darkblue;
@@ -112,6 +118,9 @@ winner,
 aside {
     flex-basis: 30%;
 }
+.winner p {
+    color: white;
+}
 .winner img {
     width: 100%;
 }
@@ -119,7 +128,7 @@ aside {
     display: flex;
 }
 .blog {
-    margin: 0px 0px 5px 5px;
+    margin: 0px 0px 0px 5px;
     border: 1px solid black;
     border-radius: 3px;
 }
@@ -140,6 +149,7 @@ aside {
     display: flex;
     background: black;
     padding-bottom: 10px;
+    margin-top: 2vh;
 }
 footer section {
     flex: 1;
