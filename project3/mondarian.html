@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mondarian Grid</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body {
+            background: #aaa;   
+        }
+         div {
+         
+            border: 1px solid black;  
+        }
+        .box1 {
+            grid-area: box1;
+            background: red;
+            
+       
+        }
+        .box2 {
+            grid-area: box2;
+            background: yellow;
+        
+        }
+        .box3 {
+            grid-area: box3;
+            background: blue;
+        }
+        .box4 {
+            grid-area: box4;
+            font-size: 20px;
+            font-family: monospace;
+            background: yellow;
+        }
+        .box5 {
+            grid-area: box5;
+            background: goldenrod;
+        }
+        .box6 {
+            grid-area: box6;
+            background: white;
+        }
+        .box7 {
+            grid-area: box7;
+            background: lightcoral;
+        }
+        .box8 {
+            grid-area: box8;
+            background: lightseagreen;
+        }
+        .box9 {
+            grid-area: box9;
+            background: lightgreen;
+        }
+        .box10 {
+            grid-area: box10;
+            background: lightsalmon;
+        }
+        .box11 {
+            grid-area: box11;
+            background: lightcyan;
+        }
+        
+        main {
+            height: 100vh;
+            display: grid;
+            grid-gap: 10px;
+            background: black;
+            grid-template-areas :
+                "box1 box1 box11 box11 box4"
+                "box2 box3 box3 box9 box4"
+                "box2 box6 box5 box10 box4"
+                "box8 box7 box5 box10 box4";
+
+        }
+      
+    </style>
+</head>
+<body>
+    <main>
+        <div class="box1">hello1</div>
+        <div class="box2">hello2</div>
+        <div class="box3">hello3</div>
+        <div class="box4">hello4</div>
+        <div class="box5">hello5</div>
+        <div class="box6">hello6</div>
+        <div class="box7">hello7</div>
+        <div class="box8">hello8</div>
+        <div class="box9">hello9</div>
+        <div class="box10">hello10</div>
+        <div class="box11">hello11</div>
+        
+        
+        
+
+    </main>
+</body>
+</html>
