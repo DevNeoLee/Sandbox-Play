@@ -13,6 +13,11 @@
         }
         body {
             background: #aaa;   
+            display: flex;
+            height: 100vh;
+            width: 100vh;
+            grid-gap: 10px;
+            
         }
          div {
          
@@ -21,8 +26,6 @@
         .box1 {
             grid-area: box1;
             background: red;
-            
-       
         }
         .box2 {
             grid-area: box2;
@@ -68,23 +71,23 @@
             background: lightcyan;
         }
         
-        main {
-            height: 100vh;
+        section {
+            height: 50vh;
+            width: 50vh;
             display: grid;
-            grid-gap: 10px;
+            grid-gap: 2px;
             background: black;
             grid-template-areas :
                 "box1 box1 box11 box11 box4"
-                "box2 box3 box3 box9 box4"
-                "box2 box6 box5 box10 box4"
+                "box2 box3 box3 box6 box4"
+                "box2 box9 box5 box10 box4"
                 "box8 box7 box5 box10 box4";
-
         }
       
     </style>
 </head>
 <body>
-    <main>
+    <section>
         <div class="box1">hello1</div>
         <div class="box2">hello2</div>
         <div class="box3">hello3</div>
@@ -93,13 +96,62 @@
         <div class="box6">hello6</div>
         <div class="box7">hello7</div>
         <div class="box8">hello8</div>
-        <div class="box9">hello9</div>
+        <div class="box9 s">hello9</div>
         <div class="box10">hello10</div>
         <div class="box11">hello11</div>
-        
-        
-        
+    </section>
+    <section>
+        <div class="box1">hello1</div>
+        <div class="box2">hello2</div>
+        <div class="box3">hello3</div>
+        <div class="box4">hello4</div>
+        <div class="box5">hello5</div>
+        <div class="box6">hello6</div>
+        <div class="box7">hello7</div>
+        <div class="box8">hello8</div>
+        <div class="box9 s">hello9</div>
+        <div class="box10">hello10</div>
+        <div class="box11">hello11</div>
+    </section>
+    <section>
+        <div class="box1">hello1</div>
+        <div class="box2">hello2</div>
+        <div class="box3">hello3</div>
+        <div class="box4">hello4</div>
+        <div class="box5">hello5</div>
+        <div class="box6">hello6</div>
+        <div class="box7">hello7</div>
+        <div class="box8">hello8</div>
+        <div class="box9 s">hello9</div>
+        <div class="box10">hello10</div>
+        <div class="box11">hello11</div>
+    </section>
+    <section>
+        <div class="box1">hello1</div>
+        <div class="box2">hello2</div>
+        <div class="box3">hello3</div>
+        <div class="box4">hello4</div>
+        <div class="box5">hello5</div>
+        <div class="box6">hello6</div>
+        <div class="box7">hello7</div>
+        <div class="box8">hello8</div>
+        <div class="box9 s">hello9</div>
+        <div class="box10">hello10</div>
+        <div class="box11">hello11</div>
+    </section>
+    <section>
+        <div class="box1">hello1</div>
+        <div class="box2">hello2</div>
+        <div class="box3">hello3</div>
+        <div class="box4">hello4</div>
+        <div class="box5">hello5</div>
+        <div class="box6">hello6</div>
+        <div class="box7">hello7</div>
+        <div class="box8">hello8</div>
+        <div class="box9 s">hello9</div>
+        <div class="box10">hello10</div>
+        <div class="box11">hello11</div>
+    </section>
 
-    </main>
 </body>
 </html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>gridFundamentalPractice</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns:repeat(auto-fit, minmax(50px, 1fr));
+            grid-gap: 10px;
+        }
+        .grid div {
+            border: 1px solid rgb(0,95,107);
+            border-radius: 3px;
+            background: rgba(0,95,107,0.8);
+            padding: 0.2em;
+            color: #fff;
+        }
+        .grid div:nth-child(2n) {
+            background: rgba(0,45,107,0.8)
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div>1
+            <br>hello Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem dolore cum assumenda ipsum autem? A, fuga ut? Quaerat asperiores ipsum amet? Velit iusto ipsum corrupti necessitatibus aspernatur fuga inventore doloremque.
+          
+        </div>
+        <div>2
+            <br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae quasi dolorem expedita molestiae hic iure nam voluptatem ipsam sequi, placeat error nisi veniam sapiente. Ipsum veritatis consectetur quis mollitia iure?
+        </div>
+        <div>3
+            <br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae quasi dolorem expedita molestiae hic iure nam
+            voluptatem ipsam sequi, placeat error nisi veniam sapiente. Ipsum veritatis consectetur quis mollitia iure?
+            <br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae quasi dolorem expedita molestiae hic iure nam
+            voluptatem ipsam sequi, placeat error nisi veniam sapiente. Ipsum veritatis consectetur quis mollitia iure?
+            <br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae quasi dolorem expedita molestiae hic iure nam
+            voluptatem ipsam sequi, placeat error nisi veniam sapiente. Ipsum veritatis consectetur quis mollitia iure?
+        </div>
+        <div>4
+            <br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae quasi dolorem expedita molestiae hic iure nam
+            voluptatem ipsam sequi, placeat error nisi veniam sapiente. Ipsum veritatis consectetur quis mollitia iure?S
+        </div>
+        <div>5
+            <br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae quasi dolorem expedita molestiae hic iure nam
+            voluptatem ipsam sequi, placeat error nisi veniam sapiente. Ipsum veritatis consectetur quis mollitia iure?
+        </div>
+        <div>6
+            <br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae quasi dolorem expedita molestiae hic iure nam
+            voluptatem ipsam sequi, placeat error nisi veniam sapiente. Ipsum veritatis consectetur quis mollitia iure?
+        </div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+        
+  
+</body>
+</html>

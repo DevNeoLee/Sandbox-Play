@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>YoTube</title>
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: 2fr [content-start] 4fr [content-end];
+            grid-template-rows: auto [content-start] auto [contnent-end];
+            grid-gap: 20px;
+        }
+        header {
+            grid-column: 1 / 3;
+            grid-row: 1;
+            background: lightpink;
+        }
+        
+        
+        aside {
+            grid-column: 1;
+            grid-row: 2;
+            background: lightcoral;
+        }
+        article {
+            grid-column: content-start;
+            grid-row: content-start;
+            background: lightgray;
+        }
+        footer {
+            grid-column: 1 / 3;
+            grid-row: 3;
+            background: lightskyblue
+        }
+
+        @media (min-width: 640px) {
+            .grid {
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <header>Header</header>
+       
+        <article>
+            <h1>Article</h1>
+            <p>This is where you put your article.</p>
+        </article>
+        <aside>Aside</aside>
+        <footer>Footer</footer>
+            
+    </div>
+</body>
+</html>
