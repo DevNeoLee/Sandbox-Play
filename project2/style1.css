@@ -25,17 +25,17 @@ header {
 .SNS {
     text-align: right;
     display: flex;
+    
 }
 .SNS i {
     font-size: 22px;
     color: white;
     padding-right: 15px;
-    width: 30%;
 }
 .SNS a {
-    flex: 1;
+    /* flex: 1; */
     margin: auto;
-    margin-left: 0;
+    /* margin-left: 0; */
 }
 nav {
     height: 5vh;
@@ -51,8 +51,10 @@ nav ul li {
     
 }
 .list {
-    font-size: 22px;
+    font-size: 25px;
+    font-weight: 600;
     color: white;
+
    
 }
 .newMessage {
@@ -132,39 +134,66 @@ aside {
     border: 1px solid black;
     border-radius: 3px;
 }
+.blog ul {
+   
+    align-items: center;
+}
 .blog-lists {
     list-style: none;
+   
 }
 .blog h3 {
     color: white;
     background: darkorchid;
+   
 }
 .blog-list a {
     font-size: 12px;
     color: black;
+    margin: auto;
+    
 }
 .footer {
     width: 90%;
     margin: auto;
     display: flex;
     background: black;
-    padding-bottom: 10px;
+ 
     margin-top: 2vh;
+  
 }
+.footer section {
+    margin-top: 0px;
+}
+.about, .insta, form {
+    display: flex;
+    height: 30vh;
+}
+.about p,
+.insta li,
+form input,
+form button,
+.button button {
+    margin: auto;
+}
+
 footer section {
     flex: 1;
     color: white;
-    text-align: center;
-    align-items: center;
+    display: flex;
 }
 footer section p {
     font-size: 12px;
     padding: 5px;
-    vertical-align: middle;
-     align-items: center;
-}
-footer section h3 {
+   
+   
+} 
+ footer section h3 {
     margin: 0px;
+}
+.foot-sec {
+    display:flex;
+    flex-direction: column;
 }
 .about-title {
     background: darkolivegreen;
@@ -181,7 +210,7 @@ footer section h3 {
 .insta li {
     flex-basis: 25%;
 }
-.insta img {
+.insta img { 
     width: 100%;
 }
 .insta-button {
@@ -192,17 +221,15 @@ footer section h3 {
     background: darkcyan;
     border: none;
     padding: 5px;
-    margin: auto 0;
-
-    
+    margin: auto;
 }
 .contact-title {
     background: darkmagenta;
 }
+
 .copyright {
-    padding-top: 20px;
     text-align: center;
-    height: 8vh;
+    height: 2vh;
 }
 
 @media only screen and (max-width: 640px) {
