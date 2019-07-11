@@ -13,12 +13,12 @@
             list-style: none;
             display: grid;
             grid-template-columns: 2fr 2fr 2fr 1.5fr;
-            grid-template-rows: minmax(200px, 300px);
+        
             grid-template-areas:
-                ". . travel ."
-                "websites . plane about"
-                ". . . ."
-                ". . . game";
+                " . . about . "
+                "website1 . plane travel"
+                " . website2 . . "
+                "website3 . . game";
         }
         li a{
             text-decoration: none;
@@ -28,9 +28,17 @@
             background: lightblue;
             grid-area: about;
         }
-        .websites {
+        .website1 {
             background: lightcoral;
-            grid-area: websites;
+            grid-area: website1;
+        }
+        .website2 {
+            background: lightcoral;
+            grid-area: website2;
+        }
+        .website3 {
+            background: lightskyblue;
+            grid-area: website3;
         }
         .travel {
             background: lightgreen;
@@ -44,6 +52,27 @@
             padding: 2px;
             background: lightsalmon;
             grid-area: plane;
+        }
+        @media screen and (max-width: 1120px) {
+            ul {
+                grid-template-areas:
+                    ". . about"
+                    "website1 . plane"
+                    "website2 . travel"
+                    "website3 . game";
+            }
+        }
+         @media screen and (max-width: 640px) {
+            ul {
+                grid-template-areas:
+                    ". about"
+                    "website1 ."
+                    ". plane"
+                    "website2 ."
+                    ". website3"
+                    "travel ."
+                    ". game";
+            }
         }
     </style>
 </head>
@@ -59,12 +88,28 @@
                         about
                     </a>
                 </li>
-                <li class="websites">
+                <li class="website1">
                     <a href="#">
-                        <svg id="websites" height="100" width="100">
-                            <circle cx="50" cy="50" r="30" fill="green" stroke="black" stroke-width="3px" style="border:10px"></circle>
+                        <svg id="website1" height="100" width="100">
+                            <circle cx="50" cy="50" r="40" fill="green" stroke="black" stroke-width="3px" style="border:10px"></circle>
                         </svg>
-                        websites
+                        website1
+                    </a>
+                </li>
+                <li class="website2">
+                    <a href="#">
+                        <svg id="website2" height="120" width="120">
+                            <circle cx="60" cy="60" r="50" fill="green" stroke="black" stroke-width="3px" style="border:10px"></circle>
+                        </svg>
+                        website2
+                    </a>
+                </li>
+                <li class="website3">
+                    <a href="#">
+                        <svg id="website3" height="140" width="140">
+                            <circle cx="70" cy="70" r="60" fill="green" stroke="black" stroke-width="3px" style="border:10px"></circle>
+                        </svg>
+                        website3
                     </a>
                 </li>
                 <li class=travel>
@@ -77,8 +122,8 @@
                 </li>
                 <li class=game>
                     <a href="#">
-                        <svg id="game" height="100" width="100">
-                            <circle cx="50" cy="50" r="30" fill="green" stroke="black" stroke-width="3px" style="border:10px"></circle>
+                        <svg id="game" height="120" width="120">
+                            <circle cx="60" cy="60" r="50" fill="green" stroke="black" stroke-width="3px" style="border:10px"></circle>
                         </svg>
                         game
                     </a>
@@ -105,9 +150,7 @@
             </ul>
         </nav>
     </header>
-    <main>
-       
-    </main>
+  
   
 
 </body>
