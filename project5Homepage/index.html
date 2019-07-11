@@ -7,24 +7,108 @@
     <title>Document</title>
     <link rel="stylesheet" href="">
     <style>
-      
+       
+        ul {
+            background: lightgrey;
+            list-style: none;
+            display: grid;
+            grid-template-columns: 2fr 2fr 2fr 1.5fr;
+            grid-template-rows: minmax(200px, 300px);
+            grid-template-areas:
+                ". . travel ."
+                "websites . plane about"
+                ". . . ."
+                ". . . game";
+        }
+        li a{
+            text-decoration: none;
+            color: green;
+        }
+        .about {
+            background: lightblue;
+            grid-area: about;
+        }
+        .websites {
+            background: lightcoral;
+            grid-area: websites;
+        }
+        .travel {
+            background: lightgreen;
+            grid-area: travel;
+        }
+        .game {
+            background: lightseagreen;
+            grid-area: game;
+        }
+        .plane {
+            padding: 2px;
+            background: lightsalmon;
+            grid-area: plane;
+        }
     </style>
 </head>
 <body>
-    <div id="paperPlane">
-            <svg width="340" height="556" viewBox="0 0 340 556" fill="green" xmlns="http://www.w3.org/2000/svg">
-                <rect width="340" height="556" fill="#E5E5E5" />
-                <rect width="340" height="556" fill="white" />
-                <line x1="16.7185" y1="320.587" x2="220.718" y2="181.587" stroke="black" stroke-width="3px"/>
-                <line x1="16.2086" y1="320.546" x2="77.2086" y2="348.546" stroke="black" stroke-width="3px"/>
-                <line x1="76.6213" y1="348.673" x2="220.621" y2="181.673" stroke="black" stroke-width="3px"/>
-                <line x1="220.414" y1="182.28" x2="97.4143" y2="364.28" stroke="black" stroke-width="3px"/>
-                <line x1="97.062" y1="364.504" x2="185.062" y2="375.504" stroke="black" stroke-width="3px"/>
-                <line x1="184.508" y1="375.909" x2="220.508" y2="181.909" stroke="black" stroke-width="3px"/>
-                <line x1="76.4984" y1="347.96" x2="81.4984" y2="410.96" stroke="black" stroke-width="3px"/>
-                <line x1="81.5267" y1="410.839" x2="97.5267" y2="363.839" stroke="black" stroke-width="3px"/>
-                <line x1="81.584" y1="410.723" x2="111.584" y2="365.723" stroke="black" stroke-width="3px" />
-            </svg>
-    </div>
+    <header>
+        <nav>
+            <ul>
+                <li class="about">  
+                    <a href="#">
+                        <svg id="about" height="100" width="100">
+                            <circle cx="50" cy="50" r="30" fill="green" stroke="black" stroke-width="3px" style="border:10px">about</circle>
+                        </svg>
+                        about
+                    </a>
+                </li>
+                <li class="websites">
+                    <a href="#">
+                        <svg id="websites" height="100" width="100">
+                            <circle cx="50" cy="50" r="30" fill="green" stroke="black" stroke-width="3px" style="border:10px"></circle>
+                        </svg>
+                        websites
+                    </a>
+                </li>
+                <li class=travel>
+                    <a href="#">
+                        <svg id="travel" height="100" width="100">
+                            <circle cx="50" cy="50" r="30" fill="green" stroke="black" stroke-width="3px" style="border:10px"></circle>
+                        </svg>
+                        traveler
+                    </a>
+                </li>
+                <li class=game>
+                    <a href="#">
+                        <svg id="game" height="100" width="100">
+                            <circle cx="50" cy="50" r="30" fill="green" stroke="black" stroke-width="3px" style="border:10px"></circle>
+                        </svg>
+                        game
+                    </a>
+                </li>
+                <div class="plane">
+                    <svg width="390" height="173" viewBox="0 0 390 173" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="390" height="173" fill="white" />
+                        <line x1="18.8844" y1="89.5135" x2="300.884" y2="22.5135" stroke="black" stroke-width="3px" />
+                        <line x1="19.933" y1="89.5045" x2="322.933" y2="48.5045" stroke="black" stroke-width="3px" />
+                        <line x1="322.501" y1="48.0356" x2="320.501" y2="18.0356" stroke="black" stroke-width="3px" />
+                        <line x1="18.9719" y1="89.5008" x2="356" y2="70.5008" stroke="black" stroke-width="3px" />
+                        <line x1="356" y1="69.1" x2="380.8" y2="135.808" stroke="black" stroke-width="3px" />
+                        <line x1="381.937" y1="135.496" x2="18.9685" y2="89.2459" stroke="black" stroke-width="3px" />
+                        <line x1="19.1063" y1="89.5114" x2="337.8" y2="158.719" stroke="black" stroke-width="3px" />
+                        <line x1="336.524" y1="159" x2="336.5" y2="130" stroke="black" stroke-width="3px" />
+                        <line x1="322.5" y1="47.02" x2="321.5" y2="72.02" stroke="black" stroke-width="3px" />
+                        <line x1="299.929" y1="22.505" x2="320.929" y2="19.505" stroke="black" stroke-width="3px" />
+                        <line x1="225.767" y1="61.9989" x2="300.767" y2="22.5575" stroke="black" stroke-width="3px" />
+                        <line x1="226.308" y1="61.3938" x2="203.308" y2="79.3938" stroke="black" stroke-width="3px" />
+                        <line x1="214.198" y1="78.5408" x2="330.198" y2="128.541" stroke="black" stroke-width="3px" />
+                    </svg>
+                    plane
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <main>
+       
+    </main>
+  
+
 </body>
 </html>
