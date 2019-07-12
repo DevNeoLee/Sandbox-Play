@@ -10,6 +10,7 @@
        * {
            margin: 0px;
            padding: 0px;
+           
        }
         body {
             background-image: url("globe.svg");
@@ -17,9 +18,13 @@
             
 
         }
+        .about a, .travel a, .plane {
+            display: grid;
+            justify-content: center;
+        }
         .about {
             /* background: lightblue; */
-            fill: none;
+            margin: 30px 0px 0px 300px;
             grid-area: about;
         }
         .website1 {
@@ -37,16 +42,20 @@
         }
         .travel {
             /* background: lightgreen; */
+            margin: 0px 0px 0px 50px;
             grid-area: travel;
         }
         .game {
             /* background: lightseagreen; */
             grid-area: game;
+            margin: 0px 100px 400px 0px;
+            padding-bottom: 300px;
         }
         .plane {
-            padding: 2px;
+            padding-left: 200px;
             /* background: lightsalmon; */
             grid-area: plane;
+            animation: initialPlaneFlight 2s;
         }
         .globepng {
             width: 10%;
@@ -59,17 +68,25 @@
             padding: 0px;
             width: 50%;
         }
-        #plane {
-            width: 300px;
+        @keyframes initialPlaneFlight {
+            0% {
+                transform: translate(0px, 0px);
+            }
+            100% {
+                transform: translate(-1500px, -120px);
+            }
         }
+       
         ul {
             list-style: none;
             display: grid;
             grid-template-columns: 2fr 2fr 2fr 1.5fr;
-        
+            grid-gap: 20px;
             grid-template-areas:
-                ". . about . "
-                ". . plane travel"
+                ". .  about ."
+                ". . . travel"
+                ". . plane ."
+                ". . . . "
                 ". . . . "
                 ". . . game";
         }
@@ -107,7 +124,7 @@
                 <li class="about">  
                     <a href="#">
                         <svg id="about" height="100" width="100">
-                            <circle cx="50" cy="50" r="30" fill="lightgreen" stroke="black" stroke-width="2px" style="border:10px">about</circle>
+                            <circle cx="50" cy="50" r="15" fill="lightgreen" stroke="black" stroke-width="2px" style="border:10px">about</circle>
                         </svg>
                         about
                     </a>
@@ -139,15 +156,15 @@
                 <li class="travel">
                     <a href="#">
                         <svg id="travel" height="100" width="100">
-                            <circle cx="50" cy="50" r="30" fill="lightcoral" stroke="black" stroke-width="3px" style="border:10px"></circle>
+                            <circle cx="50" cy="50" r="20" fill="lightcoral" stroke="black" stroke-width="3px" style="border:10px"></circle>
                         </svg>
                         traveler
                     </a>
                 </li>
-                <li class="game">
+                <li class="game" >
                     <a href="#">
                         <svg id="game" height="120" width="120">
-                            <circle cx="60" cy="60" r="50" fill="lightseagreen" stroke="black" stroke-width="3px" style="border:10px"></circle>
+                            <circle cx="60" cy="60" r="30" fill="lightseagreen" stroke="black" stroke-width="3px" style="border:10px"></circle>
                         </svg>
                         game
                     </a>
