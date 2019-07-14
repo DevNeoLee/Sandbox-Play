@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+</head>
+<body>
+    <header>
+        <p>Hello</p>
+        <p id="hihi">Hello</p>
+        <p>Hello</p>
+        <p>Hello</p>
+
+    </header>
+    <script>
+        let h = document.querySelectorAll("p");
+        for(let i=0; i < h.length; i++) {
+            h[i].addEventListener("click", doSomething)
+        }
+       
+
+        function doSomething() {
+            document.getElementById("hihi").style.backgroundColor = "lightblue";
+        }
+    </script>
+</body>
+</html>

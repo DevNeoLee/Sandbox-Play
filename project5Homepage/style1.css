@@ -1,0 +1,171 @@
+    
+       * {
+           margin: 0px;
+           padding: 0px;
+           
+       }
+        body {
+            background-image: url("globe2.svg");
+            background-repeat: no-repeat;
+     
+
+        }
+        .about a, .travel a, .plane {
+            display: grid;
+            justify-content: center;
+        }
+        .about {
+            /* background: lightblue; */
+            margin: 30px 0px 0px 300px;
+            grid-area: about;
+        }
+        .website1 {
+            /* background: lightcoral; */
+            grid-area: website1;
+            padding-left: 30px;
+        }
+        .website2 {
+            /* background: lightcoral; */
+            grid-area: website2;
+        }
+        .website3 {
+            /* background: lightskyblue; */
+            grid-area: website3;
+        }
+        .travel {
+            /* background: lightgreen; */
+            margin: 0px 0px 0px 50px;
+            grid-area: travel;
+        }
+        .game {
+            /* background: lightseagreen; */
+            grid-area: game;
+            margin: 0px 100px 400px 0px;
+        }
+        .plane-container {
+            grid-area: plane;
+        }
+       
+        .plane {
+            transition: transform 4s ease-in; 
+        }
+        .plane:hover {
+            transform: scale(1.5);  
+        }
+        .sidePlane-container {
+            display:none;
+        }
+      
+        @keyframes wonderingPlane {
+            0% {
+                transform: rotate(1.5deg);
+            }
+            12.5% {
+                transform:rotate(5deg);
+            }
+            25% {
+                transform: rotate(6deg);
+            }
+            37.5% {
+                transform:rotate(5deg)
+            }
+            50% {
+                transform: rotate(0deg);
+            }
+            62.5% {
+                transform: rotate(-5deg);
+            }
+            75% {
+                transform: rotate(-6deg);
+            }
+            85.5% {
+                transform: rotate(-1deg)
+            }
+            100% {
+                transform: rotate(1.5deg);
+            }
+        }
+        
+        @keyframes initialPlaneFlight {
+            0% {
+                transform: translate(0px, 0px);
+        
+            }
+            100% {
+                transform: translate(-1500px, -120px);
+                
+            }
+        }
+     
+       @keyframes launchPlanet1 {
+            0% {
+               transform: translate(0px, 0px) scale(1);
+            }
+            5% {
+                transform: translate(-50px, 50px);           
+            }   
+            100% {
+               transform: translate(var(--targetX), var(--targetY)) scale(0.025);
+           }
+        }
+        @keyframes launchPlanet2 {
+            0% {
+               transform: translate(0px, 0px) scale(1);
+            }
+            5% {
+                transform: translate(-50px, 50px);
+            }
+           
+            100% {
+               transform: translate(var(--targetA), var(--targetB)) scale(0);
+           }
+        }
+       @keyframes launchPlanet3 {
+            0% {
+               transform: translate(0px, 0px) scale(1);
+            }
+            5% {
+            transform: translate(-50px, 50px);     
+            }
+            100% {
+               transform: translate(var(--targetC), var(--targetD)) scale(0.025);
+            }
+        }
+        ul {
+            list-style: none;
+            display: grid;
+            grid-template-columns: 2fr 2fr 2fr 1.5fr;
+            grid-gap: 20px;
+            grid-template-areas:
+                ". .  about ."
+                ". . . travel"
+                ". . plane ."
+                ". . . . "
+                ". . . . "
+                ". . . game";
+        }
+        li a{
+            text-decoration: none;
+            color: green;
+        }
+        @media screen and (max-width: 1120px) {
+            ul {
+                grid-template-areas:
+                    ". . about"
+                    ". . plane"
+                    ". . travel"
+                    ". . game";
+            }
+        }
+         @media screen and (max-width: 640px) {
+            ul {
+                grid-template-areas:
+                    ". about"
+                    " ."
+                    ". plane"
+                    ". ."
+                    ". ."
+                    "travel ."
+                    ". game";
+            }
+        }
