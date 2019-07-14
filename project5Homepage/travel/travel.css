@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.navList {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-around;
+    margin: 15px;
+}
+.list a {
+    text-decoration: none;
+    color: gray;
+    font-size: 20px;
+}
+header hr {
+    opacity: .2;
+    margin: 5px;
+}
+main ul {
+  columns: 250px;
+  break-inside: avoid;
+  margin: 10px;
+}
+main li {
+  list-style-type:none;
+  display: grid;
+  grid-template-columns: 1fr;
+  break-inside: avoid;
+  background: lightgray;
+  margin: 1px;
+  box-shadow: 1px 2px 3px black;
+}
+p {
+    break-inside: avoid;
+}
+img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
