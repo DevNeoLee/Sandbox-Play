@@ -10,7 +10,7 @@
      
 
         }
-        .about a, .travel a, .plane {
+        .about a, .travel button, .plane {
             display: grid;
             justify-content: center;
         }
@@ -54,6 +54,10 @@
         }
         .sidePlane-container {
             display:none;
+        }
+        button {
+            border-radius: 100%;
+            padding: 30px;
         }
       
         @keyframes wonderingPlane {

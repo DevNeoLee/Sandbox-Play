@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            display: grid;
+            align-content: center;
+            justify-content: center;
+            height: 800px;
+        }
+        button {
+            padding: 20px;
+            background: lightcoral;
+        }
+        div {
+            padding: 40px;
+            background: lightcyan;
+        }
+
+        @keyframes moveAny {
+            
+            0% {
+                transform: translate(0px, 0px);
+            }
+            100% {
+                transform: translate(200px, -200px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <button>button</button>
+    <div>hello</div>
+
+    <script>
+        document.querySelector('button').addEventListener('click', move);
+         document.querySelector('div').addEventListener("animationend", anotherMove);
+        function move() {
+            document.querySelector("div").style.animation = "moveAny 1200ms";
+        }
+        function anotherMove() {
+            document.querySelector('button').style.animation = "moveAny 1200ms";
+        }
+        document.queryCommandEnabled
+    </script>
+</body>
+</html>

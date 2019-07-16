@@ -16,11 +16,15 @@ function goPlanet2() {
 function goPlanet3() {
     document.querySelector(".plane").style.animation = "launchPlanet3 1200ms";
 }
-
+function goOtherWeb() {
+    window.location.href = "travel/travel.html";
+}
+          
 //main clicking response waiting center from main Homepage
 about.addEventListener('click', goPlanet1);
 travel.addEventListener('click', goPlanet2);
 game.addEventListener('click', goPlanet3); 
+document.querySelector(".plane").addEventListener("animationend", goOtherWeb);
 // website1.addEventListener('click', movePlane); 
 // website2.addEventListener('click', movePlane); 
 // website3.addEventListener('click', movePlane); 
@@ -44,7 +48,7 @@ window.addEventListener('resize', function () {
                     // function locations(element)
 
 //finding the top left corner of the .plane location
-let pdiv = document.querySelector('.plane');
+let pdiv = document.querySelector('.plane');       
 let prect = pdiv.getBoundingClientRect();
 let px = prect.left;
 let py = prect.top;
