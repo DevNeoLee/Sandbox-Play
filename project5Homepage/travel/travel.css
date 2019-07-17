@@ -7,16 +7,49 @@ body {
     display: grid;
     grid-template-columns: 1fr;
 }
-.navList {
-    display: flex;
-    list-style: none;
-    align-items: center;
-    justify-content: space-around;
-    margin: 12px;
+nav {
+    margin: 10px;
 }
+.navList {
+    display: grid;
+    grid-template-columns: 6.8fr 3fr;
+    list-style: none;
+    height: 5vh;
+    /* align-items: center;
+    justify-content: space-around; */
+    margin: 0px;
+}
+.logo-search {
+    display: flex;
+    margin: 0px;
+}
+.logo {
+    width: 30px;
+    margin-right: 20px;
+}
+#search, #search input {
+  width: 100%;
+  height: 100%;
+}
+#search input {
+    border: none;
+    border-radius: 5px;
+    background: rgb(243, 243, 243);
+}
+.icons {
+    display: flex;
+    justify-content: space-around;
+}
+
 .list a {
     text-decoration: none;
     font-size: 20px;
+}
+header li input {
+    padding: 6px;
+    border: .5px solid lightblue;
+    margin: 3px 2px 2px 1px;
+    font-size: 17px;
 }
 header hr {
     opacity: .2;
