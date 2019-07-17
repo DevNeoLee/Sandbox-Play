@@ -5,12 +5,15 @@
            
        }
         body {
+        
             background-image: url("globe2.svg");
             background-repeat: no-repeat;
      
 
         }
-        .about a, .travel button, .plane {
+        header {
+        }
+        .about, .travel, .plane {
             display: grid;
             justify-content: center;
         }
@@ -47,7 +50,7 @@
         }
        
         .plane {
-            transition: transform 4s ease-in; 
+            transition: transform 500ms ease-out; 
         }
         .plane:hover {
             transform: scale(1.5);  
@@ -55,10 +58,28 @@
         .sidePlane-container {
             display:none;
         }
-        button {
+        .about button {
             border-radius: 100%;
+            width: 100px;
+            height: 100px;
             padding: 30px;
+            background: lightskyblue;
         }
+        .travel button {
+            border-radius: 100%;
+            width: 180px;
+            height: 180px;
+            padding: 30px;
+            background: lightsalmon;
+        }
+        .game button {
+            border-radius: 100%;
+            width: 110px;
+            height: 110px;
+            padding: 30px;
+            background: lightseagreen;
+        }
+
       
         @keyframes wonderingPlane {
             0% {
@@ -121,7 +142,7 @@
             }
            
             100% {
-               transform: translate(var(--targetA), var(--targetB)) scale(0);
+               transform: translate(var(--targetA), var(--targetB)) scale(0.025);
            }
         }
        @keyframes launchPlanet3 {
@@ -145,13 +166,9 @@
                 ". . . travel"
                 ". . plane ."
                 ". . . . "
-                ". . . . "
                 ". . . game";
         }
-        li a{
-            text-decoration: none;
-            color: green;
-        }
+        
         @media screen and (max-width: 1120px) {
             ul {
                 grid-template-areas:
@@ -167,7 +184,6 @@
                     ". about"
                     " ."
                     ". plane"
-                    ". ."
                     ". ."
                     "travel ."
                     ". game";

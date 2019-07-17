@@ -8,23 +8,34 @@ let website3 = document.querySelector(".website3");
 
 //functions to call animations plane launches to different planet
 function goPlanet1() {
-    document.querySelector(".plane").style.animation="launchPlanet1 1200ms";     
+    document.querySelector(".plane").style.animation="launchPlanet1 1000ms";   
+    document.querySelector(".plane").addEventListener("animationend", goOtherWeb);  
 }
 function goPlanet2() {
-    document.querySelector(".plane").style.animation = "launchPlanet2 1200ms";
+    document.querySelector(".plane").style.animation = "launchPlanet2 1000ms";
+    document.querySelector(".plane").addEventListener("animationend", goOtherWeb2); 
 }
 function goPlanet3() {
-    document.querySelector(".plane").style.animation = "launchPlanet3 1200ms";
+    document.querySelector(".plane").style.animation = "launchPlanet3 1000ms";
+    document.querySelector(".plane").addEventListener("animationend", goOtherWeb3); 
 }
+
+//functions to calling different websites
 function goOtherWeb() {
+    window.location.href = "about/about.html";
+}
+function goOtherWeb2() {
     window.location.href = "travel/travel.html";
+}
+function goOtherWeb3() {
+    window.location.href = "game/game.html";
 }
           
 //main clicking response waiting center from main Homepage
-about.addEventListener('click', goPlanet1);
-travel.addEventListener('click', goPlanet2);
-game.addEventListener('click', goPlanet3); 
-document.querySelector(".plane").addEventListener("animationend", goOtherWeb);
+    about.addEventListener('click', goPlanet1);
+    travel.addEventListener('click', goPlanet2);
+    game.addEventListener('click', goPlanet3);
+
 // website1.addEventListener('click', movePlane); 
 // website2.addEventListener('click', movePlane); 
 // website3.addEventListener('click', movePlane); 
@@ -34,18 +45,6 @@ window.addEventListener('resize', function () {
     "use strict";
     window.location.reload();
 });
-
-                    // //sending locations numbers pixels to CSS
-                    // for (i=0; i < location.length; i ++) {
-                    //     sendLocationsCSS(document.querySelector(i))
-                    // }
-                    // sendLocationsCSS();
-
-                    // function sendLocatonsCSS(element) {
-                    //     locations(element)
-                    // }
-                    // //finding the top left corner relative position of any element
-                    // function locations(element)
 
 //finding the top left corner of the .plane location
 let pdiv = document.querySelector('.plane');       
@@ -62,12 +61,12 @@ let y = rect.top - py - 30 +'px';
 
 document.documentElement.style.setProperty(`--targetX`, x );
 document.documentElement.style.setProperty(`--targetY`, y );
-
+        
 //.travel
 let div1 = document.querySelector('.travel');
 let rect1 = div1.getBoundingClientRect();
-let a = rect1.left - px + 60 + 'px';
-let b = rect1.top - py - 30 + 'px';
+let a = rect1.left - px + 80 + 'px';
+let b = rect1.top - py + 'px';
 
 document.documentElement.style.setProperty(`--targetA`, a);
 document.documentElement.style.setProperty(`--targetB`, b);
@@ -76,7 +75,7 @@ document.documentElement.style.setProperty(`--targetB`, b);
 let div2 = document.querySelector('.game');
 let rect2 = div2.getBoundingClientRect();
 let c = rect2.left - px - 30 + 'px';
-let d = rect2.top - py - 30 + 'px';
+let d = rect2.top - py -30 + 'px';
 
 document.documentElement.style.setProperty(`--targetC`, c);
 document.documentElement.style.setProperty(`--targetD`, d);
