@@ -1,4 +1,5 @@
 //DOM selections of main components in the website
+let plane = document.querySelector('.plane');
 let travel = document.querySelector(".travel");
 let about = document.querySelector(".about");
 let game = document.querySelector(".game");
@@ -6,18 +7,20 @@ let website1 = document.querySelector(".website1");
 let website2 = document.querySelector(".website2");
 let website3 = document.querySelector(".website3");
 
+
 //functions to call animations plane launches to different planet
 function goPlanet1() {
-    document.querySelector(".plane").style.animation="launchPlanet1 1000ms";   
-    document.querySelector(".plane").addEventListener("animationend", goOtherWeb);  
+    plane.style.animation="rise 200ms";
+    plane.style.animation="launchPlanet1 1000ms";   
+    plane.addEventListener("animationend", goOtherWeb);  
 }
 function goPlanet2() {
-    document.querySelector(".plane").style.animation = "launchPlanet2 1000ms";
-    document.querySelector(".plane").addEventListener("animationend", goOtherWeb2); 
+    plane.style.animation = "launchPlanet2 1000ms";
+    plane.addEventListener("animationend", goOtherWeb2); 
 }
 function goPlanet3() {
-    document.querySelector(".plane").style.animation = "launchPlanet3 1000ms";
-    document.querySelector(".plane").addEventListener("animationend", goOtherWeb3); 
+    plane.style.animation = "launchPlanet3 1000ms";
+    plane.addEventListener("animationend", goOtherWeb3); 
 }
 
 //functions to calling different websites
@@ -32,6 +35,9 @@ function goOtherWeb3() {
 }
           
 //main clicking response waiting center from main Homepage
+   
+    // plane.style.animation = "wonderingPlane 2000ms";
+    
     about.addEventListener('click', goPlanet1);
     travel.addEventListener('click', goPlanet2);
     game.addEventListener('click', goPlanet3);

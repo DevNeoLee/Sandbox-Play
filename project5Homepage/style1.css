@@ -17,6 +17,16 @@
             display: grid;
             justify-content: center;
         }
+        .about,
+        .travel,
+        .game {
+            transition: 400ms ease-in-out;
+        }
+        .about:hover,
+        .travel:hover,
+        .game:hover {
+            transform: scale(1.2)
+        } 
         .about {
             /* background: lightblue; */
             margin: 30px 0px 0px 300px;
@@ -50,11 +60,13 @@
         }
        
         .plane {
+            animation: wonderingPlane 2s infinite;
+            animation-timing-function: ease-out;
             transition: transform 500ms ease-out; 
         }
-        .plane:hover {
+        /* .plane:hover {
             transform: scale(1.5);  
-        }
+        } */
         .sidePlane-container {
             display:none;
         }
@@ -81,36 +93,16 @@
         }
 
       
-        @keyframes wonderingPlane {
-            0% {
-                transform: rotate(1.5deg);
-            }
-            12.5% {
-                transform:rotate(5deg);
-            }
-            25% {
-                transform: rotate(6deg);
-            }
-            37.5% {
-                transform:rotate(5deg)
-            }
+        @keyframes wonderingPlane { 
             50% {
-                transform: rotate(0deg);
-            }
-            62.5% {
-                transform: rotate(-5deg);
-            }
-            75% {
-                transform: rotate(-6deg);
-            }
-            85.5% {
-                transform: rotate(-1deg)
-            }
-            100% {
-                transform: rotate(1.5deg);
-            }
+                transform: rotate(25deg) scale(0.7);
+            }  
         }
-        
+        @keyframes rise {
+            100% {
+                transform: scale(1.5);
+            }
+        }    
         @keyframes initialPlaneFlight {
             0% {
                 transform: translate(0px, 0px);
@@ -121,7 +113,6 @@
                 
             }
         }
-     
        @keyframes launchPlanet1 {
             0% {
                transform: translate(0px, 0px) scale(1);
