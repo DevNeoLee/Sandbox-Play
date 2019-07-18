@@ -5,66 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
     <style>
-        body {
-            display: grid;
-            align-content: center;
-            justify-content: center;
-            height: 800px;
-            perspective: 300px;
-        }
-        button {
-            padding: 20px;
-            background: lightcoral;
-            transition: transform 1000ms ease-in-out;
-            transform-origin: top;
-        }
-        button:hover {
-            transform: rotateX(90deg);
-            transition: transform 1000ms ease-in-out;
-            transform-origin: top;
-        }
-
-        div {
-            padding: 40px;
-            border: 0.5px solid black;
-            background: lightcyan;
-            transition: transform 1000ms ease-in-out;
-            transform-origin: right;
-
+       .container {
+            /* width: 100%;
+            height: 200vh; */
            
-        }
-        div:hover {
-            transform: rotateY(90deg);
-            transition: transform 1000ms ease-in-out;
-            transform-origin: right;
-        }
-
-        @keyframes moveAny {
-            
-            0% {
-                transform: translate(0px, 0px);
-            }
-            100% {
-                transform: translate(200px, -200px);
-            }
+        
+       }
+       img {
+           width: 30%;
+       }
+       .parallax-window {
+            min-height: 400px;
+            background: transparent;
         }
     </style>
 </head>
 <body>
-    <button>button</button>
-    <div>hello</div>
+   <div class="container">
+    <div class="parallax-window" data-parallax="scroll" data-image-src="globe.png">hello parallax</div>
 
+
+    <div class="parallax-window" data-parallax="scroll" data-image-src="globe.png">hello parallax</div>
+    <div class="parallax-window" data-parallax="scroll" data-image-src="globe.png">hello parallax</div>
+    <div class="parallax-window" data-parallax="scroll" data-image-src="globe.png">hello parallax</div>
+       <!-- <ul id="scene"></div>
+           <div class="parallax-window" data-parallax="scroll" data-image-src="/path/to/image.jpg"></div>
+           <li class="layer" data-depth ="0"><img src="globe.png"></li>
+           <li class="layer" data-depth ="0"><img src="globe.png"></li>
+            <li class="layer" data-depth ="0"><img src="globe.png"></li>
+            <li class="layer" data-depth ="0"><img src="globe.png"></li>
+       </ul> -->
+   </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script scr="parallax/parallax.min.js"></script>
     <script>
-        document.querySelector('button').addEventListener('click', move);
-         document.querySelector('div').addEventListener("animationend", anotherMove);
-        function move() {
-            document.querySelector("div").style.animation = "moveAny 1200ms";
-        }
-        function anotherMove() {
-            document.querySelector('button').style.animation = "moveAny 1200ms";
-        }
-        document.queryCommandEnabled
+        // var scene = document.getElementById("scene");
+        // var parallax = new Parallax(scene);
     </script>
 </body>
 </html>
