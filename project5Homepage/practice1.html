@@ -11,14 +11,33 @@
             align-content: center;
             justify-content: center;
             height: 800px;
+            perspective: 300px;
         }
         button {
             padding: 20px;
             background: lightcoral;
+            transition: transform 1000ms ease-in-out;
+            transform-origin: top;
         }
+        button:hover {
+            transform: rotateX(90deg);
+            transition: transform 1000ms ease-in-out;
+            transform-origin: top;
+        }
+
         div {
             padding: 40px;
+            border: 0.5px solid black;
             background: lightcyan;
+            transition: transform 1000ms ease-in-out;
+            transform-origin: right;
+
+           
+        }
+        div:hover {
+            transform: rotateY(90deg);
+            transition: transform 1000ms ease-in-out;
+            transform-origin: right;
         }
 
         @keyframes moveAny {

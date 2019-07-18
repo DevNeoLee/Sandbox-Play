@@ -8,8 +8,6 @@
         
             background-image: url("globe2.svg");
             background-repeat: no-repeat;
-     
-
         }
         header {
         }
@@ -20,12 +18,14 @@
         .about,
         .travel,
         .game {
-            transition: 400ms ease-in-out;
+            transition: 1000ms ease-in-out;
         }
         .about:hover,
         .travel:hover,
         .game:hover {
-            transform: scale(1.2)
+            transform: scale(1.2) rotateY(10deg) rotateX(10deg);
+            transition: transform 1000ms ease-in-out;
+            transform-origin: left;
         } 
         .about {
             /* background: lightblue; */
@@ -57,12 +57,12 @@
         }
         .plane-container {
             grid-area: plane;
+            /* perspective: 3000px; */
         }
        
         .plane {
-            animation: wonderingPlane 2s infinite;
-            animation-timing-function: ease-out;
-            transition: transform 500ms ease-out; 
+            animation: wonderingPlane 10000ms infinite;
+            
         }
         /* .plane:hover {
             transform: scale(1.5);  
@@ -75,28 +75,43 @@
             width: 100px;
             height: 100px;
             padding: 30px;
-            background: lightskyblue;
+            /* background: lightskyblue; */
+            background: linear-gradient(-45deg, rgb(245, 247, 248), darkblue);
+            outline: none;
         }
         .travel button {
             border-radius: 100%;
             width: 180px;
             height: 180px;
             padding: 30px;
-            background: lightsalmon;
+            background: linear-gradient(-45deg, rgb(248, 246, 246), darksalmon);
+            outline: none;
         }
         .game button {
             border-radius: 100%;
             width: 110px;
             height: 110px;
             padding: 30px;
-            background: lightseagreen;
+            background: linear-gradient(-45deg, rgb(253, 255, 255), lightseagreen);
+            outline: none;
         }
 
       
         @keyframes wonderingPlane { 
-            50% {
-                transform: rotate(25deg) scale(0.7);
-            }  
+            
+            20% {
+                transform: rotate(-15deg) scale(0.4) rotateX(-15deg) rotateY(25deg);
+                transform-origin: left;                
+            }
+            40% {
+                transform: rotate(10deg) scale(0.2) rotateX(10deg) rotateY(-20deg);
+                transform-origin: left;                
+            }
+            75% {
+                transform: rotate(-30deg) scale(4) rotateX(-10deg) rotateY(10deg);
+                transform-origin: top;  
+            }
+                 
         }
         @keyframes rise {
             100% {
