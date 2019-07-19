@@ -20,7 +20,7 @@
         .about,
         .travel,
         .game {
-            transition: 1000ms ease-in-out;
+            /* transition: 1000ms ease-in-out; */
         }
         .about:hover,
         .travel:hover,
@@ -182,6 +182,7 @@
                 grid-template-areas:
                     ". . about"
                     ". . plane"
+                    ". . ."
                     ". . travel"
                     ". . game";
             }

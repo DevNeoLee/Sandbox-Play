@@ -5,21 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="">
     <link rel="stylesheet" href="style1.css">
     
 </head>
 <body>
     <header>
         <nav class="container">
-            <ul id="scene">
-                <li class="about layer parallax-window" data-parallax="scroll" data-depth="0">  
+            <ul id="scene" data-relative-input="true">
+                <li class="about" data-depth=".9">  
                     <button type="button" >what I do</button>
                 </li>
-                <li class="travel layer" data-depth="0">
+                <li class="travel" data-depth=".5">
                     <button>travel log</button>
                 </li>
-                <li class="game layer" data-depth="0">
+                <li class="game" data-depth=".3">
                     <button>have fun</button>
                 </li>
                 <div class="plane-container">
@@ -44,14 +43,10 @@
             </ul>
         </nav>
     </header>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script scr="parallax/parallax.min.js"></script>
-
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <script>
-        // var scene = document.getElementById("scene");
-        // var parallax = new Parallax(scene);
+        var scene = document.getElementById("scene");
+        var parallax = new Parallax(scene);
     </script>
     <script src="javascript.js"></script>
     
