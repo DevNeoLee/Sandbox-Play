@@ -6,8 +6,7 @@
        }
         body {
         
-            background-image: url("globe2.svg");
-            background-repeat: no-repeat;
+    
         }
         nav {
             width: 100%;
@@ -17,11 +16,11 @@
             display: grid;
             justify-content: center;
         }
-        .about,
+        /* .about,
         .travel,
         .game {
-            /* transition: 1000ms ease-in-out; */
-        }
+            transition: 1000ms ease-in-out;
+        } */
         .about:hover,
         .travel:hover,
         .game:hover {
@@ -33,6 +32,8 @@
             /* background: lightblue; */
             margin: 30px 0px 0px 300px;
             grid-area: about;
+            position: relative;
+            z-index: 2;
         }
         .website1 {
             /* background: lightcoral; */
@@ -46,16 +47,32 @@
         .website3 {
             /* background: lightskyblue; */
             grid-area: website3;
+            
         }
         .travel {
             /* background: lightgreen; */
             margin: 0px 0px 0px 50px;
             grid-area: travel;
+            position: relative;
+            z-index: 2
         }
         .game {
             /* background: lightseagreen; */
             grid-area: game;
             margin: 0px 100px 400px 0px;
+            position: relative;
+            z-index: 2
+        }
+        .star1 {
+            position: relative;
+            z-index: -1;
+            grid-area:star1
+        }
+        .star1 img {
+
+            width: 10%;
+            position: relative;
+            z-index: -2;
         }
         .plane-container {
             grid-area: plane;
@@ -64,6 +81,8 @@
        
         .plane {
             animation: wonderingPlane 10000ms infinite;
+            position: relative;
+            z-index: 10;
             
         }
         /* .plane:hover {
@@ -171,7 +190,7 @@
             grid-gap: 20px;
             grid-template-areas:
                 ". .  about ."
-                ". . . travel"
+                ". . star1 travel"
                 ". . plane ."
                 ". . . . "
                 ". . . game";
@@ -182,7 +201,7 @@
                 grid-template-areas:
                     ". . about"
                     ". . plane"
-                    ". . ."
+                    "star1 star1"
                     ". . travel"
                     ". . game";
             }
@@ -193,7 +212,7 @@
                     ". about"
                     " ."
                     ". plane"
-                    ". ."
+                    "star1 star1"
                     "travel ."
                     ". game";
             }
