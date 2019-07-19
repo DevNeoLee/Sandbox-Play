@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Parallax Stars</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="style1.css">
-    
 </head>
+
 <body>
     <header>
-        <nav class="container">
+        <nav>
             <ul>
-                <li class="about">  
+                <li class="about">
                     <button type="button">what I do</button>
                 </li>
                 <li class="travel">
@@ -21,53 +24,57 @@
                 <li class="game">
                     <button>have fun</button>
                 </li>
-                
-                <li class="star1" id="scene" data-relative-input="true">
-                    <img data-depth="10" src="backImages/backImg1.jpg">
-                    <img data-depth="2" src="backImages/backImg2.png">
-                    <img data-depth="31" src="backImages/backImg3.png">
-                    <img data-depth="5" src="backImages/backImg4.png">
-                    <img data-depth="3" src="backImages/backImg5.png">
-                </li>
-                
-                <div>
-                    <li class="star1">
-                        <img src="">
-                        <img src="">
-                        <img src="">
-                        <img src="">
-                        <img src="">
-                    </li>
-                </div>
 
                 <div class="plane-container">
-                    <svg class="plane" width="148.67" height="171.33" viewBox="0 0 223 257" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="plane" width="148.67" height="171.33" viewBox="0 0 223 257" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
                         <path d="M4 164L191 3L220.5 210L133 194.5L124 252L80.5 182.5L4 164Z" fill="white" />
                         <path
                             d="M191 3L4 164L80.5 182.5M191 3L220.5 210L133 194.5M191 3L116.5 191.5M191 3L80.5 182.5M116.5 191.5L124 252M116.5 191.5L133 194.5M80.5 182.5L124 252M124 252L133 194.5"
                             stroke="black" stroke-width="3" />
                     </svg>
                     <div class="sidePlane-container">
-                        <svg class="sidePlane" width="402" height="241" viewBox="0 0 402 241" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M316.09 40.0116L320 51.2534V68.2484L112.671 105.984L309.648 22.9867L316.09 40.0116Z" fill="white"
+                        <svg class="sidePlane" width="402" height="241" viewBox="0 0 402 241" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M316.09 40.0116L320 51.2534V68.2484L112.671 105.984L309.648 22.9867L316.09 40.0116Z"
+                                fill="white" stroke="black" stroke-width="3" />
+                            <path d="M100.845 108.471L338.146 64.6829L363.571 117.416L100.845 108.471Z" fill="white"
                                 stroke="black" stroke-width="3" />
-                            <path d="M100.845 108.471L338.146 64.6829L363.571 117.416L100.845 108.471Z" fill="white" stroke="black"
-                                stroke-width="3" />
-                            <path d="M142.671 110.178L323.5 115.143V137.259L142.671 110.178Z" fill="white" stroke="black" stroke-width="3" />
+                            <path d="M142.671 110.178L323.5 115.143V137.259L142.671 110.178Z" fill="white"
+                                stroke="black" stroke-width="3" />
                             <path d="M320 51.5L100.5 108.5" stroke="black" stroke-width="3" />
                         </svg>
                     </div>
                 </div>
-                   
+                <section class="scene" id="scene" data-relative-input="true">
+                    <div id="stars" data-depth=".3"></div>
+                    <div id="stars2" data-depth=".5"></div>
+                    <div id="stars3" data-depth=".4"></div>
+                    <div id="title" data-dept="1">
+                        <span>Star star star ...</span>
+                        <br>
+                        <span>where are you my star....your star......</span>
+                    </div>
+                </section>
             </ul>
         </nav>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+        <script>
+            let scene = document.getElementById("scene");
+            let parallax = new Parallax(scene);
+        </script>
+        <script src="javascript.js"></script>
     </header>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-    <script>
-        var scene = document.getElementById("scene");
-        var parallax = new Parallax(scene);
-    </script>
-    <script src="javascript.js"></script>
-    
+    <main>
+        <section>Who I am</section>
+        <section>Travel Log</section>
+        <section>Love Game</section>
+    </main>
+    <footer>
+        well, not bad...
+    </footer>
 </body>
+
 </html>
