@@ -724,13 +724,6 @@ ul {
     494px 1957px #fff, 1296px 431px #fff, 175px 1507px #fff, 831px 121px #fff,
     498px 1947px #fff, 617px 880px #fff, 240px 403px #fff;
 }
-main section {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-}
 @keyframes animStar {
     from {
         transform: translateY(0px);
@@ -786,7 +779,129 @@ main section {
     100% {
         transform: translate(var(--targetC), var(--targetD)) scale(0.025);
     }
-}  
+} 
+main {
+    height: 100%;
+}
+main section {
+    display: grid;
+    font-size: 25px;
+}
+main section h1,
+main section p {
+    margin: auto;
+}
+.img1, .img2, .img3, .img4 {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.70;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img1 span, .img2 span, .img3 span, .img4 span , .img5 span {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    font-size: 25px;
 
+}
+.img1 {
+    background-image: url(mainImg/mainImg1.jpg);
+    min-height: 500px;
+}
+.img2 {
+    background-image: url(mainImg/mainImg2.jpg);
+    min-height: 500px;
+    
+}
+.img3 {
+    background-image: url(mainImg/mainImg20.jpg);
+    min-height: 500px;
+}
+.img4 {
+    background-image: url(mainImg/mainImg21.jpg);
+    min-height: 500px;
+}
+.who, .justin, .engineer, .fun {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 500vw;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+}
+.outer-wrapper {
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    position: absolute;
+    scrollbar-width: none;
+}
 
+.photo-intro {
+    height: 20vh;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.photo-intro h1 {
+    margin: auto;
+    text-align: center;
+}
+.photo {
+    width: 100vw;
+    height: 100vh;
+}
+
+.one, .two, .three, .four, .five {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1.0;
+    background-attachment: scroll;
+}
+.one {
+    background-image: url(travel/mainImg39.jpg);
+}
+.two {
+    background-image: url(travel/mainImg18.jpg);
+}
+.three {
+    background-image: url(travel/mainImg6.jpg);
+}
+.four {
+    background-image: url(travel/mainImg16.jpg);
+}
+.five {
+    background-image: url(travel/mainImg3.jpg);
+}
+.more {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100vw;
+    height: 100vh;
+}
+.more span {
+    width: 300px;
+    height: 300px;
+    border: 1px solid lightseagreen;
+    margin: auto;
+}
+.more button {
+    padding: 10px;
+    margin: auto;
+
+}
 

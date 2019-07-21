@@ -25,13 +25,13 @@ function goPlanet3() {
 
 //functions to calling different websites
 function goOtherWeb() {
-    window.location.href = "about/about.html";
+    window.location.href = "#about";
 }
 function goOtherWeb2() {
     window.location.href = "travel/travel.html";
 }
 function goOtherWeb3() {
-    window.location.href = "game/game.html";
+    window.location.href = "#game";
 }
           
 //main clicking response waiting center from main Homepage
