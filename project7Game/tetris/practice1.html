@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <style>
+        .box {
+            width: 100px;
+            height: 50vh;
+            background: lightcoral;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            z-index: 0;
+        
+        }
+        .left {
+            width: 200px;
+            height: 15px;
+            background: lightblue;
+            margin: auto;
+               /* transform: perspective(50px) rotateY(10deg); */
+        }
+        .right {
+            width: 200px;
+            height: 15px;
+            background: lightseagreen;
+            margin: auto;
+            /* transform: perspective(50px) rotateY(10deg); */
+            
+        }
+            </style>
+</head>
+<body>
+    <div class="box">
+        <div class="left">
+
+        </div>
+        <div class="right">
+        
+        </div>
+    </div>
+
+    <script>
+        const timeline = new TimelineMax();
+        // timeline.set('.left', {y: 20});
+        // timeline.set('.right', { x: -20 });
+        timeline.set('.right', {y:-70});
+        timeline.to('.right', 1, {y: -80}, '+=1');
+       
+        timeline.to('.right, .left', .07, { y: 13 });
+        timeline.to('.right, .left', .07, { y: 0 });
+       
+     
+    </script>
+</body>
+</html>
