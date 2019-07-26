@@ -31,7 +31,90 @@
             /* transform: perspective(50px) rotateY(10deg); */
             
         }
-            </style>
+        .neon {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: black;
+            min-height: 50vh;
+        }
+        .text {
+            position: absolute;
+            display: inline-block;
+            padding: 15px 30px;
+            color: #2196f3;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            text-decoration: none;
+            font-size: 24px;
+            overflow: hidden;
+            /* transition: 0.2s; */
+        }
+        .text:hover {
+            color: white;
+            background: #264599;
+            /* box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3; */
+            box-shadow: 0 0 10px #264599, 0 0 40px #264599, 0 0 80px #264599, 0 0 160px #264599, 0 0 240px #264599;
+            transition-delay: 1s;
+        }
+
+
+
+
+                    .text span {
+                        position: absolute;
+                        display: block;
+                    }
+                    .text span:nth-child(1) {
+                        top: 0 ;
+                        left: -100%;
+                        width: 100%;
+                        height: 2px;
+                        background: linear-gradient(90deg, transparent, #264599);
+                    }
+                    .text:hover span:nth-child(1) {
+                        left: 100%;
+                        transition: 1s;
+                    }
+                    .text span:nth-child(2) {
+                        top: -100%;
+                        right: 0;
+                        height: 100%;
+                        width: 2px;
+                        background: linear-gradient(180deg, transparent, #264599);
+                    }
+                    .text:hover span:nth-child(2) {
+                        top: 100%;
+                        transition: 1s;
+                        transition-delay: .25s;
+                    }
+                     .text span:nth-child(3) {
+                        bottom: 0;
+                        right: -100%;
+                        width: 100%;
+                        height: 2px;
+                        background: linear-gradient(270deg, transparent, #264599);
+                    }
+                    .text:hover span:nth-child(3) {
+                        right: 100%;
+                        transition: 1s;
+                        transition-delay: .5s;
+                    }
+                      .text span:nth-child(4) {
+                        bottom: -100%;
+                        left: 0;
+                        height: 100%;
+                        width: 2px;
+                        background: linear-gradient(360deg, transparent, #264599);
+                    }
+                    .text:hover span:nth-child(4) {
+                        bottom: 100%;
+                        transition: 1s;
+                        transition-delay: .7s;
+                    }
+        </style>
 </head>
 <body>
     <div class="box">
@@ -43,6 +126,16 @@
         </div>
     </div>
 
+    <div class="neon">
+        <div class="text">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Neon
+
+        </div>
+    </div>
     <script>
         const timeline = new TimelineMax();
         // timeline.set('.left', {y: 20});
@@ -51,9 +144,7 @@
         timeline.to('.right', 1, {y: -80}, '+=1');
        
         timeline.to('.right, .left', .07, { y: 13 });
-        timeline.to('.right, .left', .07, { y: 0 });
-       
-     
+        timeline.to('.right, .left', .07, { y: 0 }); 
     </script>
 </body>
 </html>
