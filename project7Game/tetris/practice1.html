@@ -32,6 +32,8 @@
             
         }
         .neon {
+            position: sticky;
+            top: 0;
             margin: 0;
             padding: 0;
             display: flex;
@@ -59,83 +61,85 @@
             box-shadow: 0 0 10px #264599, 0 0 40px #264599, 0 0 80px #264599, 0 0 160px #264599, 0 0 240px #264599;
             transition-delay: 1s;
         }
-
-
-
-
-                    .text span {
-                        position: absolute;
-                        display: block;
-                    }
-                    .text span:nth-child(1) {
-                        top: 0 ;
-                        left: -100%;
-                        width: 100%;
-                        height: 2px;
-                        background: linear-gradient(90deg, transparent, #264599);
-                    }
-                    .text:hover span:nth-child(1) {
-                        left: 100%;
-                        transition: 1s;
-                    }
-                    .text span:nth-child(2) {
-                        top: -100%;
-                        right: 0;
-                        height: 100%;
-                        width: 2px;
-                        background: linear-gradient(180deg, transparent, #264599);
-                    }
-                    .text:hover span:nth-child(2) {
-                        top: 100%;
-                        transition: 1s;
-                        transition-delay: .25s;
-                    }
-                     .text span:nth-child(3) {
-                        bottom: 0;
-                        right: -100%;
-                        width: 100%;
-                        height: 2px;
-                        background: linear-gradient(270deg, transparent, #264599);
-                    }
-                    .text:hover span:nth-child(3) {
-                        right: 100%;
-                        transition: 1s;
-                        transition-delay: .5s;
-                    }
-                      .text span:nth-child(4) {
-                        bottom: -100%;
-                        left: 0;
-                        height: 100%;
-                        width: 2px;
-                        background: linear-gradient(360deg, transparent, #264599);
-                    }
-                    .text:hover span:nth-child(4) {
-                        bottom: 100%;
-                        transition: 1s;
-                        transition-delay: .7s;
-                    }
+        .text span {
+            position: absolute;
+            display: block;
+        }
+        .text span:nth-child(1) {
+            top: 0 ;
+            left: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #264599);
+        }
+        .text:hover span:nth-child(1) {
+            left: 100%;
+            transition: 1s;
+        }
+        .text span:nth-child(2) {
+            top: -100%;
+            right: 0;
+            height: 100%;
+            width: 2px;
+            background: linear-gradient(180deg, transparent, #264599);
+        }
+        .text:hover span:nth-child(2) {
+            top: 100%;
+            transition: 1s;
+            transition-delay: .25s;
+        }
+            .text span:nth-child(3) {
+            bottom: 0;
+            right: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(270deg, transparent, #264599);
+        }
+        .text:hover span:nth-child(3) {
+            right: 100%;
+            transition: 1s;
+            transition-delay: .5s;
+        }
+            .text span:nth-child(4) {
+            bottom: -100%;
+            left: 0;
+            height: 100%;
+            width: 2px;
+            background: linear-gradient(360deg, transparent, #264599);
+        }
+        .text:hover span:nth-child(4) {
+            bottom: 100%;
+            transition: 1s;
+            transition-delay: .7s;
+        }
+        div p {
+            width: 10vh;
+        }
         </style>
 </head>
 <body>
     <div class="box">
         <div class="left">
-
+    
         </div>
         <div class="right">
-        
+    
         </div>
     </div>
-
     <div class="neon">
         <div class="text">
             <span></span>
             <span></span>
             <span></span>
             <span></span>
-            Neon
-
+            touch
+    
         </div>
     </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur labore quidem sunt possimus blanditiis nesciunt, fugiat aliquid aliquam commodi dolorem alias voluptatum similique qui quam incidunt minus natus. Id, iusto? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem reiciendis omnis sequi veritatis sit possimus perferendis architecto nisi dignissimos vel. Amet harum aliquid consectetur dignissimos perferendis porro quod numquam repellat? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit alias perferendis dolor, ut earum officia, fugiat fugit adipisci nisi eum inventore placeat explicabo maiores ea corrupti, harum quis. Cupiditate, repellat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dolore explicabo ipsa fuga eum odit aliquam perspiciatis ipsam numquam, accusamus mollitia? Accusantium fugit praesentium pariatur sint optio laboriosam eos atque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora minus adipisci, fuga laboriosam cumque temporibus commodi amet sunt possimus asperiores. Magni, impedit doloremque. Molestias minima ratione sed recusandae perspiciatis dignissimos.</p>
+    </div>
+
     <script>
         const timeline = new TimelineMax();
         // timeline.set('.left', {y: 20});
