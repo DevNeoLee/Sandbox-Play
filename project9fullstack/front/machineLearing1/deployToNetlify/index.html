@@ -5,21 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>머신러닝 machine learning by Yu's</title>
+    <title>머신러닝 machine learning RockPaperScissors</title>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
 </head>
 <body>
-   v>Teachable Machine Image Model</div>
+    <div>
+        <h1>머신러닝 machine learning RockPaperScissors</h1>
+        <p>This machine learned what rocks, papers, and scissors by machine learning process</p>
+        <h5>You can test it here with your webcam. Enjoy.</h5>
+    </div>
+   
 <button type="button" onclick="init()">Start</button>
 <div id="webcam-container"></div>
 <div id="label-container"></div>
+<hr>
 <script type="text/javascript">
     // More API functions here:
     // https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image
 
     // the link to your model provided by Teachable Machine export panel
-    const URL = "./my_model";
+    const URL = "./my_model/";
 
     let model, webcam, labelContainer, maxPredictions;
 
