@@ -836,19 +836,31 @@ main section p {
     display: flex;
     flex-direction: row;
     width: 500vw;
+     min-width:100vh; 
+     min-height: 100vh;
     transform: rotate(90deg) translateY(-100vh);
     transform-origin: top left;
 }
 .outer-wrapper {
     width: 100vh;
     height: 100vw;
+    min-width:100vh; 
+     min-height: 100vh;
     transform: rotate(-90deg) translateX(-100vh);
     transform-origin: top left;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     overflow-x: scroll;
+    /* scroll-snap-type: x proximity; */
     position: absolute;
-    scrollbar-width: none;
+    scrollbar-width: 100%;
 }
+
+/* .full {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    min-width:100%; 
+} */
 
 .photo-intro {
     height: 20vh;
