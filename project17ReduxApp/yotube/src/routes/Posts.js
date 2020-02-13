@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Link} from 'react-router-dom';
 
 function Post({ match }) {
-  return <div>{match.params.title} 입니다.</div>;
+  return <div>{match.params.titleo} 입니다.</div>;
 }
 
 
@@ -16,7 +16,7 @@ function Posts() {
         <br />
         <Link to="/posts/css">씨에스에스</Link>
         <br />
-        <Route path="/posts/:title" component={Post} />
+        <Route path="/posts/:titleo" component={Post} />
       </div>
     );
 }
