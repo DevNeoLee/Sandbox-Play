@@ -11,10 +11,30 @@ import Login from "./routes/Login";
 import MyPage from "./routes/MyPage";
 
 function App() {
+
+  function SayHello(props) {
+    return (<div>
+                <h3>reminder:</h3>
+                <Yo>{props.children}</Yo>
+                <Ma>Josh{props.children}</Ma>
+                <p>oea;ijfea;oifjeo;ijf;oeajfo;aejf;oeijfo;eijfio;ejblablalblablablablabl</p>
+            </div>);
+  }
+  function Yo(props) {
+    return (<div>
+              <h2>Jamie{props.children}</h2>
+            </div>);
+  }
+
+  function Ma(props) {
+    return (<div>maimai</div>)
+  }
+
   return (
     <Router>
       <div className="App">
         <Header />
+        <SayHello />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/about/:username" component={About} />
