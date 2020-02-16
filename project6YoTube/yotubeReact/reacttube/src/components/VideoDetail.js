@@ -7,7 +7,9 @@ function VideoDetail() {
           <videos></videos>
           <p>sub title</p>
           <p>description: blablablablablablalbalblablablabla</p>
-          <video width="320" height="240" controls></video>
+          <video width="320" height="240" controls>
+            <source src="#" type=""></source>
+          </video>
       </article>
     )
 }

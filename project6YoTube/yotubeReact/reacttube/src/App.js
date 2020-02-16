@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
 import VideoList from './components/VideoList';
-import Hearder from './components/header/Hearder';
+import Header from './components/header/Header';
 
 function App() {
   return (
-    <div className="App">
-       <Hearder />
+    <div className="nav1">
+       <Header />
        <VideoList />
     </div>
   );
