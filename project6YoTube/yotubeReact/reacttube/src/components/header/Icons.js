@@ -9,6 +9,8 @@ import signinIcon from './signinIcon.png';
 function Icons() {
 
     const container = {
+        flexGrow: "1",
+        // background: "lightblue",
         display: "Grid",
         gridColumnGap: "1.3rem",
         gridTemplateColumns: "auto auto auto auto",
@@ -30,7 +32,7 @@ function Icons() {
 
     const signin = {
         width: "7.3rem",
-        padding: "0 0.7rem 0 0" 
+        // padding: "0 0.7rem 0 0" 
     }
 
     return (

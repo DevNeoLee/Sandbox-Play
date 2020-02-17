@@ -3,13 +3,18 @@ import React from 'react';
 function VideoDetail() {
     return (
       <article>
-          <h3>title</h3>
-          <videos></videos>
-          <p>sub title</p>
-          <p>description: blablablablablablalbalblablablabla</p>
-          <video width="320" height="240" controls>
+          <video width="70%" height="70%" controls>
             <source src="#" type=""></source>
           </video>
+          <h2>title</h2>
+          <h5>views</h5>
+        <p><img />thumbsUp</p>
+        <p><img />thumbsDown</p>
+        <hr />
+        <div><img /></div>
+        <p>description</p>
+        <hr />
+
       </article>
     )
 }

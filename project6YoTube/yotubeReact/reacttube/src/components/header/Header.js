@@ -5,10 +5,10 @@ import './Header.css';
 
 function Hearder() {
     return (
-        <div className="container">
+        <div className="container" >
             <Menu className="menu" />
-            <Search className="search"/>
-            <Icons className="icons"/>
+            <Search className="search" />
+            <Icons className="icons" />
         </div>
     )
 }
