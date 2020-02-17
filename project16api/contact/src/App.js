@@ -2,6 +2,7 @@ import React from 'react';
 import PersonList from './components/PersonList';
 import TodoList from './components/TodoList';
 import CommentList from './components/CommentList';
+import PictureList from './components/PictureList';
 
 const App = () => {
   return (
@@ -12,12 +13,13 @@ const App = () => {
       <hr/>
 
       <div>
-        <PersonList />
+        {/* <PersonList />
         <hr />
         <TodoList />
         <hr />
-        <CommentList />
+        <CommentList /> */}
         <hr />
+        <PictureList />
       </div>
      
 
