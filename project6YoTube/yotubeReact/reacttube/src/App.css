@@ -1,0 +1,10 @@
+.app {
+    margin: 0;
+    height: 100vh;
+}
+
+.mainBody {
+    display: grid;
+    grid-template-columns: 15rem 1fr;
+    height: 100%;
+}
