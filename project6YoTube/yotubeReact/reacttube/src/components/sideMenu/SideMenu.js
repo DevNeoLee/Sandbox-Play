@@ -3,10 +3,14 @@ import './sideMenu.css';
 
 function SideMenu() {
     return (
-        <ul>
-            <li>Home</li>
-            <li>Trending</li>
-            <li>Subscriptions</li>
+        <ul className="sideList">
+            <li className="sideItem">Home</li>
+            <li className="sideItem">Trending</li>
+            <li className="sideItem">Subscriptions</li>
+            <li className="sideItem">a</li>
+            <li className="sideItem">a</li>
+            <li className="sideItem">a</li>
+            <li className="sideItem">a</li>
         </ul>
     )
 }

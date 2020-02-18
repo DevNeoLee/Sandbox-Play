@@ -1,0 +1,6 @@
+.videoFrame {
+    margin: 0;
+    padding: 2px;
+    border-right: 0.5px solid gray;
+    background: lightpink;
+}

@@ -1,9 +1,9 @@
 import React from 'react';
-import Video from './components/Video';
-import SideMenu from './components/sideMenu/SideMenu'
+import VideoList from './components/videoList/VideoList';
+import SideMenu from './components/sideMenu/SideMenu';
 import Header from './components/header/Header';
 import yotube from './api/yotube';
-import './App.css'
+import './App.css';
 
 function App() {
   return (
@@ -11,11 +11,10 @@ function App() {
         <Header />
         <div className="mainBody">
           <SideMenu />
-          <Video />
+          <VideoList />
         </div>
       </div>
       
-    
   );
 }
 

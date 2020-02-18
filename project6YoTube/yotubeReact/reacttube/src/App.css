@@ -1,6 +1,7 @@
 .app {
     margin: 0;
     height: 100vh;
+    font-family: 'Nanum Gothic', sans-serif;
 }
 
 .mainBody {

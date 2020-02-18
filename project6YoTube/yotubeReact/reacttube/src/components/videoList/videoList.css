@@ -1,0 +1,19 @@
+.category {
+    margin: 2px;
+    padding: 5px;
+}
+.videoList {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 2fr));
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.video {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
