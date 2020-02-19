@@ -12,8 +12,8 @@ function VideoList({videoData}) {
             <h3 className="category">Recommended</h3>
             
             <ul className="videoList">
-                {videoData.map((video) => 
-                    (<li className="video" key={video.id}> <Video videoData={video} /> </li>)
+                {videoData.map((video, id) => 
+                    (<li className="video" key={id}> <Video key={id} videoData={video} /> </li>)
                 )}
                 
             </ul>

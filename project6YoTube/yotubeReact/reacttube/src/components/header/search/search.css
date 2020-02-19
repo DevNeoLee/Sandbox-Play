@@ -7,49 +7,57 @@
         }
 
     form {
-            width: 70%;
+            width: 80%;
             align-items: center;
             align-content: center;
-            height: 1.5rem;
+            height: 3.0rem;
             margin: 0;
-            height: 1.85rem;
             justify-content: center;
             padding: 0;
             margin: 0;
-             text-align: center;
+            text-align: center;
         }
     form input {
     
-            width: 100%;
+            width: 70%;
             align-content: center;
-            font-size: 1.1rem;
+            font-size: 1rem;
+            font-weight: 300;
             align-items: center;
-            height: 1.6rem;
+            height: 2rem;
             justify-content: center;
-            padding: 0;
-            margin: 0;
+            padding: 0 0 0 1rem;
+            margin-left: 7rem;
+            border: 0.05rem  lightgray solid;
+            border-right: none;
+            border-radius: 0.12rem 0 0 0.12rem;
+            opacity: 10;
+
             
     }
 
 .searchContainer button {
 
             align-content: center;
-            border: 1px solid gray;
-            margin-left: 0;
+            border: 0.05rem 0.05rem 0.05rem 0 solid lightgray;
+            border-radius: 0 0.13rem 0.13rem 0;
             padding-left: 0;
             background: transparent;
             align-items: center;
-            height: 1.8rem;
+            height: 2.1rem;
+            width: 4.6rem;
             cursor: pointer;
             justify-content: center;
             /* text-align: center; */
             /* padding: 0.3rem 0; */
-            margin-bottom: 1px;
+    
         
              
 
         }
 
         button img {
-            height: 1.7rem;
+
+            height: 1.2rem;
+            padding: 0.1rem 0 0 0.3rem;
         }

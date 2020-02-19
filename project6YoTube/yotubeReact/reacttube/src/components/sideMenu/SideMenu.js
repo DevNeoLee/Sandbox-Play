@@ -8,11 +8,11 @@ import originalIcon from './originalIcon.png';
 function SideMenu() {
     return (
         <ul className="sideList">
-            <li className="sideItem"><img src={ homeIcon } /> Home</li>
-            <li className="sideItem"><img src={ trendingIcon } /> Trending</li>
-            <li className="sideItem"><img src={ subscriptionIcon } /> Subscriptions</li>
+            <li className="sideItem"><img src={homeIcon} /> <p>Home</p></li>
+            <li className="sideItem"><img src={trendingIcon} /> <p>Trending</p></li>
+            <li className="sideItem"><img src={subscriptionIcon} /> <p>Subscriptions</p></li>
+            <li className="sideItem"><img src={originalIcon} /> <p>Originals</p></li>
             <hr />
-            <li className="sideItem"><img src={ originalIcon } /> Originals</li>
            
         </ul>
     )

@@ -26,12 +26,11 @@ export default class Search extends Component {
 
     render(){
         return (
-            <div className="searchContainer">
-                <form onSubmit={this.handleSubmit} id="searchForm">
-                    <input type="text" onChange={this.handleChange} placeholder="search videos" className="searchInput" />
-                </form>
+            <form onSubmit={this.handleSubmit} className="searchContainer" id="searchForm">
+                <input type="text" onChange={this.handleChange} placeholder="Search" className="searchInput" />
                 <button type="submit" form="searchForm" value="Submit"><img src={searchIcon} /></button>
-            </div>
+            </form>
+          
         )
     }
    
