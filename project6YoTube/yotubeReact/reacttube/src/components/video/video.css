@@ -1,6 +1,18 @@
 .videoFrame {
     margin: 0;
-    padding: 2px;
-    border-right: 0.5px solid gray;
-    background: lightpink;
+    padding: 0.5rem;
+    /* border-right: 0.5px solid gray; */
+    width: 17rem;
+    height: 20rem;
+    /* background: lightpink; */
+}
+
+.videoFrame p {
+    font-size: 0.8rem;
+}
+
+.textFrame {
+    width: 17rem;
+    height: 25rem;
+    /* border: 1px solid black; */
 }

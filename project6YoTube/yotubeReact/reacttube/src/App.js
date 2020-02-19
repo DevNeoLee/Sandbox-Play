@@ -15,14 +15,13 @@ export default class App extends Component {
   const response = await yotube.get('search', {
     params: {
       part: "snippet",
-      maxResults: 5,
+      maxResults: 40,
       key: `AIzaSyCeCFeVFIlSPjwDclJxBKMTuVfnH43nCgQ`,
       q: searchTerm,
     }
   })
   
   this.setState({ videos: response.data.items });
-  // console.log(this.state);
 }
    
   render() {

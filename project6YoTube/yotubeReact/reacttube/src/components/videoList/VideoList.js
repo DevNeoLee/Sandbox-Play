@@ -8,12 +8,12 @@ function VideoList({videoData}) {
 
     return (
         
-        <div>
+        <div className="videoBody">
             <h3 className="category">Recommended</h3>
             
             <ul className="videoList">
                 {videoData.map((video) => 
-                    (<li className="video"> <Video videoData={video} /> </li>)
+                    (<li className="video" key={video.id}> <Video videoData={video} /> </li>)
                 )}
                 
             </ul>

@@ -1,19 +1,30 @@
-.category {
-    margin: 2px;
-    padding: 5px;
+.videoBody {
+    background: rgba(249,249,249);
 }
+    .category {
+    margin:
+     0.5rem;
+    padding: 1rem;
+}
+
 .videoList {
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 2fr));
-    justify-content: center;
-    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
     
+    /* background: lightgrey; */
+    /* justify-content: center;
+    align-items: center;
+    text-decoration: center;
+     */
 }
 
 .video {
     margin: 0;
-    padding: 0;
+    padding: 0px;
     list-style: none;
+    /* background: lightgreen; */
+    
+
 }
