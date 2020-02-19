@@ -10,11 +10,12 @@ function VideoList({videoData}) {
         
         <div>
             <h3 className="category">Recommended</h3>
-            {console.log({videoData})}
+            
             <ul className="videoList">
-                {console.log({ videoData })}
-             
-                <li className="video"> <Video videoData={videoData}/> </li>
+                {videoData.map((video) => 
+                    (<li className="video"> <Video videoData={video} /> </li>)
+                )}
+                
             </ul>
         </div>
     )

@@ -11,7 +11,7 @@ function Video({videoData}) {
           <video width="280" height="200" controls>
             <source src="#" type="video/mp4" />
           </video>
-          {/* <h3>{videoData}</h3> */}
+          <h3>{videoData.snippet.title}</h3>
           <h5>views</h5>
         <p><img />thumbsUp</p>
         <p><img />thumbsDown</p>
