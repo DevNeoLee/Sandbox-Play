@@ -7,8 +7,7 @@ import './App.css';
 
 export default class App extends Component {
     state = {
-      videos: [],
-      selectedVideo: null,
+      videos: []
     }
 
   handleSubmit = async(searchTerm) => {
@@ -22,8 +21,8 @@ export default class App extends Component {
     }
   })
   
-  this.setState({videos: response.data.items, selectedVideo: response.data.items[0]});
-  console.log(this.state);
+  this.setState({ videos: response.data.items });
+  // console.log(this.state);
 }
    
   render() {
@@ -32,7 +31,7 @@ export default class App extends Component {
         <Header onChildClick={this.handleSubmit}/>
         <div className="mainBody">
           <SideMenu />
-          <VideoList videoData = {this.state}/>
+          <VideoList videoData = {this.state.videos}/>
         </div>
       </div>
     )
