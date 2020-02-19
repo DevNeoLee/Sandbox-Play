@@ -1,44 +1,10 @@
 
-
-.container {
-    /* margin: 0;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    justify-content: flex-start;
-    align-items: stretch;
-    align-items: center;
-    height: 8vh; */
-    display: flex;
-    align-items: stretch;
-    justify-content: space-between;
-    /* background: lightgrey; */
-    /* align-items: stretch; */
+.headerContainer {
+    display: grid;
+    grid-template-columns: 1fr 7fr 2fr;
+    height: 8vh; 
+    margin: 0;
+    padding: 0;
 }
 
-.menu {
-    width: 100px;
-    margin: 10px;
-    text-align: center;
-    line-height: 75px;
-  font-size: 30px;
-    
-} 
-
-.search {
-
-  
- 
-}
-
-.icons {
-    /* background: lightcyan;
-    width: 100px;
-    margin: 10px;
-    text-align: center;
-    line-height: 75px;
-  font-size: 30px;
-    flex-grow: 8; */
-} 
 

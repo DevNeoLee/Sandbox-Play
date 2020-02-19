@@ -1,0 +1,55 @@
+ .searchContainer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+    form {
+            width: 70%;
+            align-items: center;
+            align-content: center;
+            height: 1.5rem;
+            margin: 0;
+            height: 1.85rem;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+             text-align: center;
+        }
+    form input {
+    
+            width: 100%;
+            align-content: center;
+            font-size: 1.1rem;
+            align-items: center;
+            height: 1.6rem;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+            
+    }
+
+.searchContainer button {
+
+            align-content: center;
+            border: 1px solid gray;
+            margin-left: 0;
+            padding-left: 0;
+            background: transparent;
+            align-items: center;
+            height: 1.8rem;
+            cursor: pointer;
+            justify-content: center;
+            /* text-align: center; */
+            /* padding: 0.3rem 0; */
+            margin-bottom: 1px;
+        
+             
+
+        }
+
+        button img {
+            height: 1.7rem;
+        }

@@ -1,16 +1,18 @@
-import React, { Fragment } from 'react';
-import { Menu, Search, Icons } from '.';
+import React from 'react'
+import { Menu, Icons } from '.';
+import Search from './search/Search'
 import './Header.css';
+import yotube from '../../api/yotube';
 
+function Header({onChildClick}) {
 
-function Hearder() {
     return (
-        <div className="container" >
-            <Menu className="menu" />
-            <Search className="search" />
-            <Icons className="icons" />
+        <div className="headerContainer" >
+            <Menu />
+            <Search onChildClick={onChildClick}/>
+            <Icons />
         </div>
     )
 }
 
-export default Hearder;
+export default Header;

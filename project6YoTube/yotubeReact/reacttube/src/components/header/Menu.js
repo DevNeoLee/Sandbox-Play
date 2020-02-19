@@ -5,20 +5,18 @@ import { findByLabelText } from '@testing-library/react';
 
 function Menu() {
 
-    const container = {
-        flexGrow: "1",
-        // background: "lightblue",
+    const menuContainer = {
+        // flexGrow: "1",
         display: "Grid",
-        gridColumnGap: "1.3rem",
-        gridTemplateColumns: "auto auto",
+        gridColumnGap: "1.1rem",
+        gridTemplateColumns: "3rem 9rem",
         justifyContent: "center",
         alignItems: "center",
     }
 
     const hamMenu = {
+        margin: "1.1rem",
         width: "1.8rem",
-        // padding: "0 0 0 1.5rem ",
-        // grid: "1"
     }
 
     const logo = {
@@ -26,7 +24,7 @@ function Menu() {
         // grid: "1"
     }
     return (
-        <div style={ container }>
+        <div style={ menuContainer }>
             <img src={ hamMenuIcon } style={ hamMenu }/>
             <img src={logoIcon} style={ logo } />
         </div>
