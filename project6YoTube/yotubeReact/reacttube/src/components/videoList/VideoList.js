@@ -14,8 +14,7 @@ function VideoList({videoData}) {
             <ul className="videoList">
                 {videoData.map((video, id) => 
                     (<li className="video" key={id}> <Video key={id} videoData={video} /> </li>)
-                )}
-                
+                )} 
             </ul>
         </div>
     )
