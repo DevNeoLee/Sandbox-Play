@@ -13,7 +13,6 @@ function SideMenu() {
             <li className="sideItem"><img src={subscriptionIcon} /> <p>Subscriptions</p></li>
             <li className="sideItem"><img src={originalIcon} /> <p>Originals</p></li>
             <hr />
-           
         </ul>
     )
 }
