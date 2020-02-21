@@ -1,9 +1,10 @@
 .videoFrame {
     margin: 0;
-    padding: 0.5rem;
+    padding: 1.5rem;
+    background: lightgray;
     /* border-right: 0.5px solid gray; */
-    width: 17rem;
-    height: 20rem;
+    /* width: 17rem;
+    height: 20rem; */
     /* background: lightpink; */
 }
 
@@ -12,7 +13,7 @@
 }
 
 .textFrame {
-    width: 17rem;
-    height: 25rem;
+    /* width: 17rem;
+    height: 25rem; */
     /* border: 1px solid black; */
 }
