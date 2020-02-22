@@ -6,7 +6,7 @@ import './watchVideo.css';
 
 // when component 'Video', 'VideoList' is in this component, 'WatchVideo'
 // CSS Display: none will hide some elements and also change size or relative locations of some
-// features differently. Solely by CSS change.
+// features differently. Solely by CSS 'watchOn' change
 
 function WatchVideo({videoData, onChildClick, watchOn}) {
     return (

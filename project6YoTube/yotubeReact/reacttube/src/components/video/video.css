@@ -1,19 +1,41 @@
 .videoFrame {
-    margin: 0;
-    padding: 1.5rem;
-    background: lightgray;
-    /* border-right: 0.5px solid gray; */
-    /* width: 17rem;
-    height: 20rem; */
+    margin: 0.2rem 0.5rem 0.2rem 0.5rem;
+    background: rgba(249,249,249);
     /* background: lightpink; */
+    overflow: hidden;
+    word-break: break-all;
+    white-space: normal;
+}
+
+.videoFrame iframe {
+    margin: 0;
+    padding: 1rem 0 0 0;
+
+
 }
 
 .videoFrame p {
     font-size: 0.8rem;
+    overflow: hidden;
+    word-break: break-all;
+    white-space: normal;
+
 }
 
 .textFrame {
-    /* width: 17rem;
-    height: 25rem; */
+    padding: 0.5rem;
     /* border: 1px solid black; */
+    word-break: break-all;
+    white-space: normal;
+}
+
+.textFrame h4, .textFrame h5 {
+    overflow: hidden;
+    word-break: break-all;
+    white-space: normal;
+}
+
+article img {
+    width: 18rem;
+    max-height: 10rem;
 }

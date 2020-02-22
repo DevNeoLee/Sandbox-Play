@@ -8,11 +8,17 @@
     <style>
         * {
             box-sizing: border-box;
+            overflow: hidden;
         }
         .grid {
             display: grid;
-            grid-template-columns:repeat(auto-fit, minmax(50px, 1fr));
-            grid-gap: 10px;
+       
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-gap: 50px;
+        
+            grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+            overflow: hidden;
+           
         }
         .grid div {
             border: 1px solid rgb(0,95,107);
@@ -20,6 +26,8 @@
             background: rgba(0,95,107,0.8);
             padding: 0.2em;
             color: #fff;
+            max-height: 300px;
+            max-width: 300px;
         }
         .grid div:nth-child(2n) {
             background: rgba(0,45,107,0.8)
