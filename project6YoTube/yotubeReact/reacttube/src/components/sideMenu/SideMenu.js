@@ -9,13 +9,14 @@ import { Link, NavLink } from 'react-router-dom';
 function SideMenu() {
     return (
       <ul className="sideList">
-        <NavLink to="/" style={{ textDecoration: "none" }}>
+        <NavLink to="/" style={{ textDecoration: "none" }}
+          >
           <li className="sideItem">
             <img src={homeIcon} /> <p>Home</p>
           </li>
         </NavLink>
 
-        <NavLink to="" style={{ textDecoration: "none" }}>
+        <NavLink to="" style={{ textDecoration: "none" }} >
           <li className="sideItem">
             <img src={trendingIcon} /> <p>Trending</p>
           </li>

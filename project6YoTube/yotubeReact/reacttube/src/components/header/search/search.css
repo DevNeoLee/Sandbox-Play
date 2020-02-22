@@ -32,8 +32,6 @@
             border-right: none;
             border-radius: 0.12rem 0 0 0.12rem;
             opacity: 10;
-
-            
     }
 
 .searchContainer button {
@@ -42,7 +40,7 @@
             /* border: 0.05rem 0.05rem 0.05rem 0 solid blue;  */
             /* border-radius: 0 0.13rem 0.13rem 0; */
             padding-left: 0;
-            /* background: transparent; */
+            background: transparent;
             align-items: center;
             height: 2.1rem;
             width: 4.6rem;
