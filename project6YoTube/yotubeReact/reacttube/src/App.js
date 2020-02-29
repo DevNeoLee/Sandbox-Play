@@ -29,7 +29,7 @@ export default class App extends Component {
     const response = await yotube.get("search", {
       params: {
         part: "snippet",
-        maxResults: 11,
+        maxResults: 36,
         key: `AIzaSyCeCFeVFIlSPjwDclJxBKMTuVfnH43nCgQ`,
         q: searchTerm
       }
