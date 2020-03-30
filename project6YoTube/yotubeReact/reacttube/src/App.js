@@ -43,9 +43,9 @@ export default class App extends Component {
   };
 
   // initial searched when it opened first time
-  componentDidMount() {
-    this.handleSubmit("technology");
-  }
+  // componentDidMount() {
+  //   this.handleSubmit("technology");
+  // }
 
   render() {
     //variable indicating 'video watch' mode on or off
